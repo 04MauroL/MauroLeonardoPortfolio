@@ -1,2 +1,160 @@
-﻿@page "/"
+@page "/"
+@using Portfolio.Frontend.Components
 <PageTitle>Home</PageTitle>
+
+<MudStack Spacing="20">
+    <MudGrid Spacing="10" Justify="Justify.SpaceBetween">
+        <MudItem xs="12" md="6" Class="d-flex order-2 order-md-1">
+            <MudStack Spacing="10" Justify="Justify.Center" Class="flex-grow-1">
+                <MudText Typo="Typo.h6" Align="Align.Center" Class="align-md-start">Hi, I'm Mauro</MudText>
+                <MudText Typo="Typo.h3" Align="Align.Center" Class="align-md-start">
+                    <b>An Application Developer</b>
+                </MudText>
+                <MudText Typo="Typo.h5" Align="Align.Center" Class="align-md-start">Based in Herselt, Belgium</MudText>
+
+                <ButtonComponent Variant="Variant.Filled">
+                    Click to learn more about me!
+                </ButtonComponent>
+            </MudStack>
+        </MudItem>
+
+        <MudItem xs="12" md="6" Class="d-flex justify-center order-1 order-md-2">
+            <MudImage Src="images/home/Mauro.jpg" Alt="Mauro Leonardo" Fluid="true" Width="500" Height="500"
+                      Class="rounded-pill"/>
+        </MudItem>
+    </MudGrid>
+
+    <MudSpacer/>
+
+    <MudGrid Spacing="20">
+        <MudItem xs="12" md="6">
+            <MudStack Spacing="20">
+                <MudStack Spacing="6">
+                    <MudText Typo="Typo.h4" Align="Align.Center">
+                        <b>Get to know me!</b>
+                    </MudText>
+                    <MudText Typo="Typo.h6" Align="Align.Center">
+                        I’m a 21 year old student at Thomas More, University of Applied
+                        Sciences. I’m currently enrolled in the Bachelors program Application Development.
+                    </MudText>
+                </MudStack>
+
+                <MudStack Spacing="6" AlignItems="AlignItems.Center">
+                    <MudImage Src="images/home/Internships.png"
+                              Alt="Internships"
+                              Elevation="0"
+                              Class="shadow-none rounded-xl"
+                              Fluid="true"
+                              Width="450"
+                              Height="450"/>
+                    <MudText Typo="Typo.h6">
+                        <b>Internships.</b> To graduate my Associate Degree & Bachelor, I had to finish an
+                        internship. I
+                        choose AllPhi in Westerlo for both my internships.
+                    </MudText>
+
+                    <ButtonComponent FullWidth="true" Variant="Variant.Outlined">View my internships!</ButtonComponent>
+                </MudStack>
+
+                <MudStack Spacing="6">
+                    <MudImage Src="images/home/Projects.png"
+                              Alt="Projects"
+                              Elevation="0"
+                              Class="shadow-none rounded-xl"
+                              Fluid="true"/>
+                    <MudText Typo="Typo.h6">
+                        <b>Projects</b> During my Associate Degree & Bachelor, I have successfully created multiple
+                        projects, and gained relevant skills in the field of IT.
+                    </MudText>
+
+                    <ButtonComponent Variant="Variant.Outlined">View my projects!</ButtonComponent>
+                </MudStack>
+            </MudStack>
+        </MudItem>
+
+        <MudItem xs="12" md="6">
+            <MudStack Spacing="20">
+                <MudStack Spacing="6">
+                    <MudImage Src="images/home/Passion.png"
+                              Alt="Passion"
+                              Elevation="0"
+                              Class="shadow-none rounded-xl"
+                              Fluid="true"/>
+                    <MudText Typo="Typo.h6">
+                        <b>Passion.</b> I thrive to create applications with a focus on user experience, leveraging
+                        years
+                        of coding and programming experience.
+                    </MudText>
+
+                    <ButtonComponent Variant="Variant.Outlined">Contact me to have a chat!</ButtonComponent>
+                </MudStack>
+
+                <MudStack Spacing="4">
+                    <MudImage Src="images/home/Skillset.jpg" Alt="Skillset" Elevation="0"
+                              Class="shadow-none rounded-xl"
+                              Fluid="true"/>
+                    <MudText Typo="Typo.h6">
+                        <b>Skillset.</b> Creating delightful and enjoyable user interfaces and experiences requires the
+                        right tools and a strong set of skills.
+                    </MudText>
+
+                    <ButtonComponent Variant="Variant.Outlined">View my skillset!</ButtonComponent>
+                </MudStack>
+            </MudStack>
+        </MudItem>
+    </MudGrid>
+
+    <MudSpacer/>
+
+    <MudPaper Elevation="0" Class="pa-10 mud-theme-primary">
+        <MudStack Spacing="10">
+            <MudText Typo="Typo.h4">
+                <b>My Diplomas</b>
+            </MudText>
+            <MudGrid Spacing="20">
+                <MudItem md="6">
+                    <MudStack Spacing="4">
+                        <MudText Typo="Typo.h5">
+                            <b>Bachelor’s Degree Application Development<br/>Thomas More University of Applied
+                                Science.</b>
+                        </MudText>
+                        <MudDivider/>
+                        <MudStack>
+                            <MudText Typo="Typo.h6">
+                                <b>Start of study:</b> September 2024
+                            </MudText>
+                            <MudText Typo="Typo.h6">
+                                <b>Graduated in:</b> June 2026
+                            </MudText>
+                            <MudText Typo="Typo.h6">
+                                <b>Duration of study:</b> 2 years
+                            </MudText>
+                        </MudStack>
+                    </MudStack>
+                </MudItem>
+
+                <MudItem md="6">
+                    <MudStack Spacing="4">
+                        <MudText Typo="Typo.h5">
+                            <b>Associate Degree of Programming<br/>Thomas More University of Applied Science.</b>
+                        </MudText>
+                        <MudDivider/>
+                        <MudStack>
+                            <MudText Typo="Typo.h6">
+                                <b>Start of study:</b> September 2022
+                            </MudText>
+                            <MudText Typo="Typo.h6">
+                                <b>Graduated in:</b> June 2024
+                            </MudText>
+                            <MudText Typo="Typo.h6">
+                                <b>Duration of study:</b> 2 years
+                            </MudText>
+                        </MudStack>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        </MudStack>
+    </MudPaper>
+
+</MudStack>
+    
