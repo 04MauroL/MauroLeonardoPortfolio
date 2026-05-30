@@ -1,0 +1,29 @@
+<MudAppBar Fixed="false" Gutters="false" Elevation="0">
+    <MudContainer MaxWidth="MaxWidth.Large" Class="pa-0">
+        <MudStack AlignItems="AlignItems.Center" Row="true">
+            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/">
+                <MudText Typo="Typo.h5">
+                    <b>Mauro Leonardo</b>
+                </MudText>
+            </MudButton>
+
+            <MudSpacer/>
+
+            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/about">
+                <MudText Typo="Typo.h5" Color="Color.Primary">
+                    About
+                </MudText>
+            </MudButton>
+            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/internships">
+                <MudText Typo="Typo.h5" Color="Color.Primary">
+                    Internships
+                </MudText>
+            </MudButton>
+
+            <MudDivider Vertical="true" DividerType="DividerType.Middle" FlexItem="true" Class="my-2"/>
+
+            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" href="/" Target="_blank"/>
+            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" href="/" Target="_blank"/>
+        </MudStack>
+    </MudContainer>
+</MudAppBar>
