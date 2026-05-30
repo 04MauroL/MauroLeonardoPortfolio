@@ -1,0 +1,90 @@
+<MudAppBar Fixed="false" Gutters="false" Elevation="0">
+    <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="pa-4">
+        <MudStack AlignItems="AlignItems.Center" Row="true">
+            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/">
+                <MudText Typo="Typo.h5">
+                    <b>Mauro Leonardo</b>
+                </MudText>
+            </MudButton>
+
+            <MudSpacer/>
+
+            <MudHidden Breakpoint="Breakpoint.MdAndDown">
+                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@HomeUrl">
+                    <MudText Typo="Typo.h5" Color="Color.Primary">
+                        @if (IsActive(HomeUrl))
+                        {
+                            <b>Home</b>
+                        }
+                        else
+                        {
+                            <span>Home</span>
+                        }
+                    </MudText>
+                </MudButton>
+                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AboutUrl">
+                    <MudText Typo="Typo.h5" Color="Color.Primary">
+                        @if (IsActive(AboutUrl))
+                        {
+                            <b>About</b>
+                        }
+                        else
+                        {
+                            <span>About</span>
+                        }
+                    </MudText>
+                </MudButton>
+                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@InternshipsUrl">
+                    <MudText Typo="Typo.h5" Color="Color.Primary">
+                        @if (IsActive(InternshipsUrl))
+                        {
+                            <b>Internships</b>
+                        }
+                        else
+                        {
+                            <span>Internships</span>
+                        }
+                    </MudText>
+                </MudButton>
+                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@ProjectsUrl">
+                    <MudText Typo="Typo.h5" Color="Color.Primary">
+                        @if (IsActive(ProjectsUrl))
+                        {
+                            <b>Projects</b>
+                        }
+                        else
+                        {
+                            <span>Projects</span>
+                        }
+                    </MudText>
+                </MudButton>
+
+                <MudDivider Vertical="true" DividerType="DividerType.Middle" FlexItem="true" Class="my-2"/>
+
+                <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" href="/" Target="_blank"/>
+                <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" href="/" Target="_blank"/>
+            </MudHidden>
+
+            <MudHidden Breakpoint="Breakpoint.MdAndUp">
+                <MudMenu Icon="@Icons.Material.Filled.Menu"
+                         DropShadow="false"
+                         TransformOrigin="Origin.TopLeft">
+                    <MudMenuItem Icon="@Icons.Material.Filled.Home" IconColor="Color.Primary" Label="Home"
+                                 Href="/"/>
+                    <MudMenuItem Icon="@Icons.Material.Filled.Person" IconColor="Color.Primary" Label="About"
+                                 Href="/about"/>
+                    <MudMenuItem Icon="@Icons.Material.Filled.Work" IconColor="Color.Primary" Label="Internships"
+                                 Href="/internships"/>
+                    <MudMenuItem Icon="@Icons.Material.Filled.FolderShared" IconColor="Color.Primary" Label="Projects"
+                                 Href="/projects"/>
+
+                    <MudDivider DividerType="DividerType.Middle" FlexItem="true" Class="my-2"/>
+
+                    <MudMenuItem Icon="@Icons.Custom.Brands.GitHub" IconColor="Color.Primary" Label="GitHub" Href="/"/>
+                    <MudMenuItem Icon="@Icons.Custom.Brands.LinkedIn" IconColor="Color.Primary" Label="LinkedIn"
+                                 Href="/"/>
+                </MudMenu>
+            </MudHidden>
+        </MudStack>
+    </MudContainer>
+</MudAppBar>
