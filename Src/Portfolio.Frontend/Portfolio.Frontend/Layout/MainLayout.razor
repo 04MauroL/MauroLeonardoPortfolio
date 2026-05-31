@@ -3,28 +3,16 @@
 <MudPopoverProvider/>
 <MudThemeProvider Theme="_theme"/>
 
-<MudLayout>
+<MudLayout id="main-layout">
     <NavigationComponent/>
 
     <MudMainContent Class="pa-0 py-md-20">
         @Body
+
+        <MudScrollToTop TopOffset="100">
+            <MudIconButton Variant="Variant.Filled" Icon="@Icons.Material.Filled.ArrowUpward" Color="Color.Primary"/>
+        </MudScrollToTop>
     </MudMainContent>
 
     <FooterComponent/>
 </MudLayout>
-
-@code {
-
-    private readonly MudTheme _theme = new()
-    {
-        PaletteLight = new PaletteLight
-        {
-            Primary = "#596235",
-            Secondary = Colors.LightGreen.Darken2,
-            Tertiary = Colors.Gray.Lighten4,
-            Background = Colors.Gray.Lighten4,
-            AppbarBackground = Colors.Gray.Lighten4
-        }
-    };
-
-}
