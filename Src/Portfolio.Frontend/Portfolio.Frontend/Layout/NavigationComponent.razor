@@ -10,66 +10,11 @@
             <MudSpacer/>
 
             <MudHidden Breakpoint="Breakpoint.MdAndDown">
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.HomeUrl">
-                    <MudText Typo="Typo.h5" Color="Color.Primary">
-                        @if (IsActive(AppRoutes.HomeUrl))
-                        {
-                            <b>Home</b>
-                        }
-                        else
-                        {
-                            <span>Home</span>
-                        }
-                    </MudText>
-                </MudButton>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.AboutUrl">
-                    <MudText Typo="Typo.h5" Color="Color.Primary">
-                        @if (IsActive(AppRoutes.AboutUrl))
-                        {
-                            <b>About me</b>
-                        }
-                        else
-                        {
-                            <span>About me</span>
-                        }
-                    </MudText>
-                </MudButton>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.SkillsetUrl">
-                    <MudText Typo="Typo.h5" Color="Color.Primary">
-                        @if (IsActive(AppRoutes.SkillsetUrl))
-                        {
-                            <b>Skillset</b>
-                        }
-                        else
-                        {
-                            <span>Skillset</span>
-                        }
-                    </MudText>
-                </MudButton>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.InternshipsUrl">
-                    <MudText Typo="Typo.h5" Color="Color.Primary">
-                        @if (IsActive(AppRoutes.InternshipsUrl))
-                        {
-                            <b>Internships</b>
-                        }
-                        else
-                        {
-                            <span>Internships</span>
-                        }
-                    </MudText>
-                </MudButton>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.ProjectsUrl">
-                    <MudText Typo="Typo.h5" Color="Color.Primary">
-                        @if (IsActive(AppRoutes.ProjectsUrl))
-                        {
-                            <b>Projects</b>
-                        }
-                        else
-                        {
-                            <span>Projects</span>
-                        }
-                    </MudText>
-                </MudButton>
+                <NavigationLink Href="@AppRoutes.HomeUrl">Home</NavigationLink>
+                <NavigationLink Href="@AppRoutes.AboutUrl">About me</NavigationLink>
+                <NavigationLink Href="@AppRoutes.SkillsetUrl">Skillset</NavigationLink>
+                <NavigationLink Href="@AppRoutes.InternshipsUrl">Internships</NavigationLink>
+                <NavigationLink Href="@AppRoutes.ProjectsUrl">Projects</NavigationLink>
 
                 <MudDivider Vertical="true" DividerType="DividerType.Middle" FlexItem="true" Class="my-2"/>
 
@@ -85,6 +30,8 @@
                                  Href="@AppRoutes.HomeUrl"/>
                     <MudMenuItem Icon="@Icons.Material.Filled.Person" IconColor="Color.Primary" Label="About"
                                  Href="@AppRoutes.AboutUrl"/>
+                    <MudMenuItem Icon="@Icons.Material.Filled.WorkspacePremium" IconColor="Color.Primary"
+                                 Label="Skillset" Href="@AppRoutes.SkillsetUrl"/>
                     <MudMenuItem Icon="@Icons.Material.Filled.Work" IconColor="Color.Primary" Label="Internships"
                                  Href="@AppRoutes.InternshipsUrl"/>
                     <MudMenuItem Icon="@Icons.Material.Filled.FolderShared" IconColor="Color.Primary" Label="Projects"
