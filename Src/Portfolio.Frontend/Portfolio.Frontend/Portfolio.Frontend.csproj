@@ -10,15 +10,20 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.3"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.3" PrivateAssets="all"/>
-        <PackageReference Include="MudBlazor" Version="9.5.0"/>
+        <PackageReference Include="MudBlazor" Version="9.5.0" GeneratePathProperty="true"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <_ContentIncludedByDefault Remove="wwwroot\css\app.css"/>
-    </ItemGroup>
+    <!-- Auto-copy MudBlazor CSS to wwwroot for IDE Intellisense -->
+    <Target Name="CopyMudBlazorCss" BeforeTargets="Build">
+        <MakeDir Directories="$(MSBuildProjectDirectory)/wwwroot/css"/>
+        <Copy SourceFiles="$(PkgMudBlazor)/staticwebassets/MudBlazor.min.css"
+              DestinationFiles="$(MSBuildProjectDirectory)/wwwroot/css/mudblazor-intellisense.css"
+              SkipUnchangedFiles="true"/>
+    </Target>
 
     <ItemGroup>
         <Folder Include="wwwroot\images\home\"/>
+        <Folder Include="wwwroot\images\skillset\"/>
     </ItemGroup>
 
 </Project>

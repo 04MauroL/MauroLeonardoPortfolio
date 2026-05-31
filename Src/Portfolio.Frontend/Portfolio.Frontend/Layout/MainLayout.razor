@@ -6,10 +6,8 @@
 <MudLayout>
     <NavigationComponent/>
 
-    <MudMainContent Class="pa-0">
-        <MudContainer Gutters="false" MaxWidth="MaxWidth.ExtraLarge" Class="px-10 py-20">
-            @Body
-        </MudContainer>
+    <MudMainContent Class="pa-0 py-md-20">
+        @Body
     </MudMainContent>
 
     <FooterComponent/>
@@ -21,8 +19,9 @@
     {
         PaletteLight = new PaletteLight
         {
-            Primary = "#596235", //Colors.Green.Darken4,
+            Primary = "#596235",
             Secondary = Colors.LightGreen.Darken2,
+            Tertiary = Colors.Gray.Lighten4,
             Background = Colors.Gray.Lighten4,
             AppbarBackground = Colors.Gray.Lighten4
         }

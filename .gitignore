@@ -56,3 +56,4 @@ nunit-*.xml
 # Rider
 Src/Portfolio.Frontend/.idea/
 /Src/Portfolio.Frontend/Portfolio.Frontend.sln.DotSettings.user
+/Src/Portfolio.Frontend/Portfolio.Frontend/wwwroot/css/mudblazor-intellisense.css
