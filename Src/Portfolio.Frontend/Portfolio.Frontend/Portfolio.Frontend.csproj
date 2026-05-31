@@ -23,6 +23,7 @@
 
     <ItemGroup>
         <Folder Include="wwwroot\images\home\"/>
+        <Folder Include="wwwroot\images\skillset\"/>
     </ItemGroup>
 
 </Project>
