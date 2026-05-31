@@ -34,6 +34,18 @@
                         }
                     </MudText>
                 </MudButton>
+                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.SkillsetUrl">
+                    <MudText Typo="Typo.h5" Color="Color.Primary">
+                        @if (IsActive(AppRoutes.SkillsetUrl))
+                        {
+                            <b>Skillset</b>
+                        }
+                        else
+                        {
+                            <span>Skillset</span>
+                        }
+                    </MudText>
+                </MudButton>
                 <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@AppRoutes.InternshipsUrl">
                     <MudText Typo="Typo.h5" Color="Color.Primary">
                         @if (IsActive(AppRoutes.InternshipsUrl))

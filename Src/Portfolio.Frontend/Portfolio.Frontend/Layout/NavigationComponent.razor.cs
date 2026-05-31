@@ -4,6 +4,7 @@ namespace Portfolio.Frontend.Layout;
 
 public partial class NavigationComponent : ComponentBase
 {
+    //ToDo: make navbar buttons component for ease of use
     private string _currentPath = string.Empty;
     [Inject] private NavigationManager NavigationManager { get; set; } = null!;
 
