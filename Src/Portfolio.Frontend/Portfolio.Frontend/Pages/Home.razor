@@ -2,29 +2,29 @@
 @using Portfolio.Frontend.Components
 
 <MudStack Spacing="20">
-    <MudGrid Spacing="10" Justify="Justify.SpaceBetween">
-        <MudItem xs="12" md="6" Class="d-flex order-2 order-md-1">
-            <MudStack Spacing="10" Justify="Justify.Center" Class="flex-grow-1">
-                <MudText Typo="Typo.h5" Align="Align.Center" Class="align-md-start">Hi, I'm Mauro</MudText>
-                <MudText Typo="Typo.h2" Align="Align.Center" Class="align-md-start">
-                    <b>An Application Developer</b>
-                </MudText>
-                <MudText Typo="Typo.h4" Align="Align.Center" Class="align-md-start">Based in Herselt, Belgium
-                </MudText>
-            </MudStack>
-        </MudItem>
+    <Section BackgroundColor="Color.Primary">
+        <MudGrid Spacing="20" Justify="Justify.SpaceBetween">
+            <MudItem xs="12" md="6" Class="d-flex order-2 order-md-1">
+                <MudStack Spacing="10" Justify="Justify.Center" Class="mud-tertiary-text flex-grow-1">
+                    <MudText Typo="Typo.h5" Align="Align.Center" Class="align-md-start">Hi, I'm Mauro</MudText>
+                    <MudText Typo="Typo.h2" Align="Align.Center" Class="align-md-start">
+                        <b>An Application Developer</b>
+                    </MudText>
+                    <MudText Typo="Typo.h4" Align="Align.Center" Class="align-md-start">Based in Herselt, Belgium
+                    </MudText>
+                </MudStack>
+            </MudItem>
 
-        <MudItem xs="12" md="6" Class="d-flex justify-center order-1 order-md-2">
-            <MudImage Src="images/home/Mauro.jpg" Alt="Mauro Leonardo" Fluid="true" Width="500" Height="500"
-                      Class="rounded-pill"/>
-        </MudItem>
-    </MudGrid>
+            <MudItem xs="12" md="6" Class="d-flex justify-center order-1 order-md-2">
+                <MudImage Src="images/home/Mauro.jpg" Alt="Mauro Leonardo" Fluid="true" Width="500" Height="500"
+                          Class="rounded-pill"/>
+            </MudItem>
+        </MudGrid>
+    </Section>
 
-    <MudSpacer/>
-
-    <div class="mud-theme-primary rounded-xl pa-8">
-        <MudGrid Spacing="20">
-            <MudItem xs="12" md="6">
+    <Section>
+        <MudGrid Spacing="20" Justify="Justify.SpaceAround" Class="my-md-20">
+            <MudItem xs="12" md="5">
                 <MudStack Spacing="20">
                     <MudStack Spacing="6">
                         <MudText Typo="Typo.h4" Align="Align.Center">
@@ -35,7 +35,7 @@
                         </MudText>
                     </MudStack>
 
-                    <MudStack Spacing="6" AlignItems="AlignItems.Center" Class="ma-md-20">
+                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Passion.png"
                                   Alt="Passion"
                                   Elevation="0"
@@ -47,14 +47,10 @@
                             and programming experience.
                         </MudText>
 
-                        <ButtonComponent Variant="Variant.Outlined"
-                                         TextColor="Color.Tertiary"
-                                         Href="@AppRoutes.AboutUrl">
-                            Learn more about me!
-                        </ButtonComponent>
+                        <ButtonComponent Href="@AppRoutes.AboutUrl">Learn more about me!</ButtonComponent>
                     </MudStack>
 
-                    <MudStack Spacing="6" AlignItems="AlignItems.Center" Class="ma-md-20">
+                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Skillset.jpg" Alt="Skillset" Elevation="0"
                                   Class="shadow-none rounded-xl"
                                   Fluid="true"/>
@@ -64,17 +60,14 @@
                             and a strong set of skills.
                         </MudText>
 
-                        <ButtonComponent Variant="Variant.Outlined"
-                                         TextColor="Color.Tertiary">
-                            View my skillset!
-                        </ButtonComponent>
+                        <ButtonComponent Href="@AppRoutes.SkillsetUrl">View my skillset!</ButtonComponent>
                     </MudStack>
                 </MudStack>
             </MudItem>
 
-            <MudItem xs="12" md="6">
+            <MudItem xs="12" md="5">
                 <MudStack Spacing="20">
-                    <MudStack Spacing="6" AlignItems="AlignItems.Center" Class="ma-md-20">
+                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Internships.png"
                                   Alt="Internships"
                                   Elevation="0"
@@ -88,13 +81,10 @@
                             Westerlo for both my internships.
                         </MudText>
 
-                        <ButtonComponent Variant="Variant.Outlined"
-                                         TextColor="Color.Tertiary">
-                            View my internships!
-                        </ButtonComponent>
+                        <ButtonComponent>View my internships!</ButtonComponent>
                     </MudStack>
 
-                    <MudStack Spacing="6" AlignItems="AlignItems.Center" Class="ma-md-20">
+                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Projects.png"
                                   Alt="Projects"
                                   Elevation="0"
@@ -106,14 +96,11 @@
                             gained relevant skills in the field of IT.
                         </MudText>
 
-                        <ButtonComponent Variant="Variant.Outlined"
-                                         TextColor="Color.Tertiary">
-                            View my projects!
-                        </ButtonComponent>
+                        <ButtonComponent>View my projects!</ButtonComponent>
                     </MudStack>
                 </MudStack>
             </MudItem>
         </MudGrid>
-    </div>
+    </Section>
 
 </MudStack>

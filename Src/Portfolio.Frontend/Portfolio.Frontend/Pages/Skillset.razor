@@ -3,8 +3,8 @@
 
 <MudStack Spacing="20">
     <Section>
-        <MudGrid Spacing="10" Justify="Justify.SpaceBetween">
-            <MudItem xs="12" md="6">
+        <MudGrid Spacing="20" Justify="Justify.SpaceBetween">
+            <MudItem xs="12" md="6" Class="order-md-first order-last">
                 <MudImage Src="images/skillset/Figma-Editor.png"
                           Alt="Figma Editor"
                           Elevation="3"
@@ -41,25 +41,27 @@
         </MudGrid>
     </Section>
 
-    <Section BackgroundColor="Color.Primary">
-        <MudGrid Spacing="10" Justify="Justify.SpaceBetween">
+    <MudSpacer/>
+
+    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+        <MudGrid Spacing="20" Justify="Justify.SpaceBetween">
             <MudItem xs="12" md="6" Class="mud-text-tertiary">
                 <MudStack Spacing="10">
-                    <SectionTitle Color="Color.Tertiary">
+                    <SectionTitle>
                         Where Design Meets Function
                     </SectionTitle>
 
-                    <MudText Typo="Typo.h5" Color="Color.Tertiary">
+                    <MudText Typo="Typo.h5">
                         Static websites work, but websites with interactive components, animations and fun interactions
                         are the future of web development.
                     </MudText>
 
-                    <MudText Typo="Typo.h5" Color="Color.Tertiary">
+                    <MudText Typo="Typo.h5">
                         <SectionSubTitle>JavaScript.</SectionSubTitle>
                         With JavaScript I animate components and make them interactive.
                     </MudText>
 
-                    <MudText Typo="Typo.h5" Color="Color.Tertiary">
+                    <MudText Typo="Typo.h5">
                         <SectionSubTitle>TypeScript.</SectionSubTitle>
                         TypeScript is a superset of JavaScript. I use this for bigger projects, backends, but also for
                         animating and providing motion to websites.
@@ -77,11 +79,13 @@
         </MudGrid>
     </Section>
 
+    <MudSpacer/>
+
     <Section>
         <MudGrid Spacing="20" Justify="Justify.SpaceBetween">
             <MudItem xs="12" md="6">
                 <MudStack Spacing="10" AlignItems="AlignItems.Center">
-                    <SectionTitle>
+                    <SectionTitle Center="true">
                         Frameworks to Speed Up Design
                     </SectionTitle>
 
@@ -106,7 +110,7 @@
                               Fluid="true"
                               Class="mud-width-full rounded-lg order-md-first order-last"/>
 
-                    <SectionTitle>
+                    <SectionTitle Center="true">
                         Frameworks for Scalable API's
                     </SectionTitle>
 
@@ -119,47 +123,49 @@
         </MudGrid>
     </Section>
 
-    <Section>
-        <Section BackgroundColor="Color.Primary" class="rounded-xl">
-            <MudGrid Spacing="10">
-                <MudItem xs="12" md="6">
-                    <MudStack Row="true" Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
-                        <MudImage Src="images/skillset/Angular-Logo.png"
-                                  Alt="Angular Logo"
-                                  Fluid="true"
-                                  Width="300"
-                                  Class="mud-theme-tertiary rounded-xl"/>
+    <MudSpacer/>
 
-                        <MudText Typo="Typo.h5" Color="Color.Tertiary">
-                            <SectionSubTitle>Angular.</SectionSubTitle>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut commodi consequatur ducimus
-                            ea est in ipsam ipsum laudantium nisi nulla omnis pariatur quaerat sed sint sunt totam
-                            velit, veniam!
-                        </MudText>
-                    </MudStack>
-                </MudItem>
+    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+        <MudGrid Spacing="20">
+            <MudItem xs="12" md="6">
+                <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
+                    <MudImage Src="images/skillset/Angular-Logo.png"
+                              Alt="Angular Logo"
+                              Fluid="true"
+                              Width="300"
+                              Class="mud-theme-tertiary rounded-xl"/>
 
-                <MudItem xs="12" md="6">
-                    <MudStack Row="true" Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
-                        <MudText Typo="Typo.h5" Color="Color.Tertiary">
-                            <SectionSubTitle>Blazor.</SectionSubTitle>
-                            A frontend framework developed by Microsoft, build on ASP.NET Core, providing the ability to
-                            create reusable components, and use C# instead of JS for logic programming.
-                        </MudText>
+                    <MudText Typo="Typo.h5">
+                        <SectionSubTitle>Angular.</SectionSubTitle>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut commodi consequatur ducimus
+                        ea est in ipsam ipsum laudantium nisi nulla omnis pariatur quaerat sed sint sunt totam
+                        velit, veniam!
+                    </MudText>
+                </MudStack>
+            </MudItem>
 
-                        <MudImage Src="images/skillset/Blazor-Logo.png"
-                                  Alt="Blazor Logo"
-                                  Fluid="true"
-                                  Width="300"
-                                  Class="mud-theme-tertiary rounded-xl"/>
-                    </MudStack>
-                </MudItem>
-            </MudGrid>
-        </Section>
+            <MudItem xs="12" md="6">
+                <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
+                    <MudImage Src="images/skillset/Blazor-Logo.png"
+                              Alt="Blazor Logo"
+                              Fluid="true"
+                              Width="300"
+                              Class="order-md-last mud-theme-tertiary rounded-xl"/>
+
+                    <MudText Typo="Typo.h5">
+                        <SectionSubTitle>Blazor.</SectionSubTitle>
+                        A frontend framework developed by Microsoft, build on ASP.NET Core, providing the ability to
+                        create reusable components, and use C# instead of JS for logic programming.
+                    </MudText>
+                </MudStack>
+            </MudItem>
+        </MudGrid>
     </Section>
 
+    <MudSpacer/>
+
     <Section>
-        <MudGrid Spacing="10">
+        <MudGrid Spacing="20">
             <MudItem xs="12" md="6">
                 <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
                     <MudText Typo="Typo.h5">
@@ -173,7 +179,7 @@
                               Elevation="3"
                               Fluid="true"
                               ObjectFit="ObjectFit.ScaleDown"
-                              Class="rounded-xl"/>
+                              Class="rounded-xl order-md-last order-first"/>
                 </MudStack>
             </MudItem>
 
@@ -186,4 +192,7 @@
             </MudItem>
         </MudGrid>
     </Section>
+
+    <MudSpacer/>
 </MudStack>
+
