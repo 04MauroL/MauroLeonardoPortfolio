@@ -4,12 +4,6 @@ namespace Portfolio.Frontend.Layout;
 
 public partial class NavigationComponent : ComponentBase
 {
-    private const string AboutUrl = "/about";
-    private const string ContactUrl = "/contact";
-    private const string HomeUrl = "/";
-    private const string InternshipsUrl = "/internships";
-    private const string ProjectsUrl = "/projects";
-
     private string _currentPath = string.Empty;
     [Inject] private NavigationManager NavigationManager { get; set; } = null!;
 
