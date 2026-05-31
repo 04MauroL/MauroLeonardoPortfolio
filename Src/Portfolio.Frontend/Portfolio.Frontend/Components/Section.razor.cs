@@ -5,6 +5,7 @@ namespace Portfolio.Frontend.Components;
 
 public partial class Section : ComponentBase
 {
-    [Parameter] public required Color BackgroundColor { get; set; } = Color.Tertiary;
-    [Parameter] public required RenderFragment? ChildContent { get; set; }
+    [Parameter] public string? Class { get; set; }
+    [Parameter] public Color BackgroundColor { get; set; } = Color.Tertiary;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
 }

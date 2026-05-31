@@ -7,6 +7,7 @@
             <MudItem xs="12" md="6">
                 <MudImage Src="images/skillset/Figma-Editor.png"
                           Alt="Figma Editor"
+                          Elevation="3"
                           Fluid="true"
                           Class="mud-width-full rounded-lg"/>
             </MudItem>
@@ -69,6 +70,7 @@
             <MudItem xs="12" md="6">
                 <MudImage Src="images/skillset/Edit-Swim-Lesson-Modal.png"
                           Alt="Modal for editing swim lesson"
+                          Elevation="3"
                           Fluid="true"
                           Class="mud-width-full rounded-lg"/>
             </MudItem>
@@ -90,6 +92,7 @@
 
                     <MudImage Src="images/skillset/Sponsor-Site.png"
                               Alt="Figma Editor"
+                              Elevation="3"
                               Fluid="true"
                               Class="mud-width-full rounded-lg"/>
                 </MudStack>
@@ -98,9 +101,10 @@
             <MudItem xs="12" md="6">
                 <MudStack Spacing="10" AlignItems="AlignItems.Center">
                     <MudImage Src="images/skillset/Backend1.png"
-                              Alt="Figma Editor"
+                              Alt="Backend code 1"
+                              Elevation="3"
                               Fluid="true"
-                              Class="mud-width-full rounded-lg"/>
+                              Class="mud-width-full rounded-lg order-md-first order-last"/>
 
                     <SectionTitle>
                         Frameworks for Scalable API's
@@ -108,9 +112,77 @@
 
                     <MudText Typo="Typo.h5" Align="Align.Center">
                         Frameworks like node.js, ASP.NET Core and Laravel help me design robust and scalable API's, both
-                        REST API's or application specific/focused.
+                        REST API's or application specific.
                     </MudText>
                 </MudStack>
+            </MudItem>
+        </MudGrid>
+    </Section>
+
+    <Section>
+        <Section BackgroundColor="Color.Primary" class="rounded-xl">
+            <MudGrid Spacing="10">
+                <MudItem xs="12" md="6">
+                    <MudStack Row="true" Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
+                        <MudImage Src="images/skillset/Angular-Logo.png"
+                                  Alt="Angular Logo"
+                                  Fluid="true"
+                                  Width="300"
+                                  Class="mud-theme-tertiary rounded-xl"/>
+
+                        <MudText Typo="Typo.h5" Color="Color.Tertiary">
+                            <SectionSubTitle>Angular.</SectionSubTitle>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut commodi consequatur ducimus
+                            ea est in ipsam ipsum laudantium nisi nulla omnis pariatur quaerat sed sint sunt totam
+                            velit, veniam!
+                        </MudText>
+                    </MudStack>
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudStack Row="true" Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
+                        <MudText Typo="Typo.h5" Color="Color.Tertiary">
+                            <SectionSubTitle>Blazor.</SectionSubTitle>
+                            A frontend framework developed by Microsoft, build on ASP.NET Core, providing the ability to
+                            create reusable components, and use C# instead of JS for logic programming.
+                        </MudText>
+
+                        <MudImage Src="images/skillset/Blazor-Logo.png"
+                                  Alt="Blazor Logo"
+                                  Fluid="true"
+                                  Width="300"
+                                  Class="mud-theme-tertiary rounded-xl"/>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        </Section>
+    </Section>
+
+    <Section>
+        <MudGrid Spacing="10">
+            <MudItem xs="12" md="6">
+                <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-grow-1">
+                    <MudText Typo="Typo.h5">
+                        <SectionSubTitle>ASP.NET Core back-ends.</SectionSubTitle>
+                        I’ve created multiple back-ends using ASP.NET Core, an open-source multi platform framework
+                        created by Microsoft.
+                    </MudText>
+
+                    <MudImage Src="images/skillset/Backend2.png"
+                              Alt="Backend code 2"
+                              Elevation="3"
+                              Fluid="true"
+                              ObjectFit="ObjectFit.ScaleDown"
+                              Class="rounded-xl"/>
+                </MudStack>
+            </MudItem>
+
+            <MudItem xs="12" md="6" Class="d-flex">
+                <MudImage Src="images/skillset/Open-Api.png"
+                          Alt="Open Api Example"
+                          Elevation="3"
+                          Fluid="true"
+                          Class="rounded-xl"/>
             </MudItem>
         </MudGrid>
     </Section>

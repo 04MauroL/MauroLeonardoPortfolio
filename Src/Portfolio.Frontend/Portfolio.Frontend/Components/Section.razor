@@ -1,6 +1,5 @@
-<div
-    class="@($"mud-{BackgroundColor.ToString().ToLower()}")">
-    <MudContainer Gutters="false" MaxWidth="MaxWidth.ExtraLarge" Class="px-10 py-20">
+<div class="@($"mud-{BackgroundColor.ToString().ToLower()}") @Class">
+    <MudContainer Gutters="false" MaxWidth="MaxWidth.ExtraLarge" Class="pa-10">
         @ChildContent
     </MudContainer>
 </div>
