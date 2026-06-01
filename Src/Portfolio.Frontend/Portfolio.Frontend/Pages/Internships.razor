@@ -1,0 +1,111 @@
+@page "/internships"
+@using Portfolio.Frontend.Components
+
+<MudStack Spacing="20">
+    <Section>
+        <MudGrid Spacing="20">
+            <MudItem xs="12" md="8">
+                <MudStack Spacing="10" Justify="Justify.Center" AlignItems="AlignItems.Start" Class="mud-height-full">
+                    <SectionTitle>Internships</SectionTitle>
+                    <MudText Typo="Typo.h5">
+                        To achieve my diploma's, I completed two internships at AllPhi in Westerlo. Take a look at my
+                        internships to see my hands-on experiences. And make sure to take a look at my skillset as well!
+                    </MudText>
+                    <ButtonComponent Href="@AppRoutes.SkillsetUrl">
+                        Take a look at my skills!
+                    </ButtonComponent>
+                </MudStack>
+            </MudItem>
+
+            <MudItem xs="12" md="4">
+                <MudImage Src="images/home/Internships.png"
+                          Alt="Logo AllPhi"
+                          Fluid="true"
+                          Class="rounded-pill"/>
+            </MudItem>
+        </MudGrid>
+    </Section>
+
+    <MudSpacer/>
+
+    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+        <MudStack Spacing="20">
+            <MudGrid Spacing="20">
+                <MudItem xs="12" md="7" Class="order-md-first order-last">
+                    <MudImage Src="images/internships/Tracker-Team-Skills.png"
+                              Alt="Training & Certificate Tracker team skills page"
+                              Elevation="3"
+                              Fluid="true"
+                              Class="rounded-xl"/>
+                </MudItem>
+
+                <MudItem xs="12" md="5">
+                    <MudStack Spacing="5" AlignItems="AlignItems.Start">
+                        <SectionTitle>Training & Certificate Tracker</SectionTitle>
+                        <MudText Typo="Typo.h6">
+                            AllPhi, Westerlo. Feb. 2026 - June 2026.
+                        </MudText>
+                        <MudText Typo="Typo.h5">
+                            To be able to graduate my Bachelors Degree in Application Development, I completed my second
+                            internship at AllPhi, Westerlo. During this internship, I was a full stack developer,
+                            tasked to develop an in-house application with Angular 21 and ASP.NET Core with .NET 10.
+                            This application is called the 'Training & Certificate Tracker'.
+                        </MudText>
+                        <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary">
+                            View details of the training & certificate tracker!
+                        </ButtonComponent>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+
+            <MudSpacer/>
+
+            <MudGrid Spacing="20">
+                <MudItem xs="12" md="5">
+                    <MudStack Spacing="5" AlignItems="AlignItems.Start">
+                        <SectionTitle>Consultant Management System</SectionTitle>
+                        <MudText Typo="Typo.h6">
+                            AllPhi, Westerlo. Feb. 2024 - June 2024.
+                        </MudText>
+                        <MudText Typo="Typo.h5">
+                            Before graduating in 2024 with an Associate Degree of Programming, I successfully completed
+                            my internship at AllPhi, Westerlo. AllPhi is a .NET Consultancy company, and I was tasked
+                            with creating an in-house application which centralizes all consultant data & information.
+                            This platform is application the 'Consultant Management System'.
+                        </MudText>
+                        <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary">
+                            View details of the consultant management system!
+                        </ButtonComponent>
+                    </MudStack>
+                </MudItem>
+
+                <MudItem xs="12" md="7">
+                    <MudImage Src="images/internships/Consultant-Overview-Page.png"
+                              Alt="Consultant Management System consultant overview page"
+                              Elevation="3"
+                              Fluid="true"
+                              Class="rounded-xl"/>
+                </MudItem>
+            </MudGrid>
+        </MudStack>
+    </Section>
+
+    <MudSpacer/>
+
+    <Section>
+        <MudStack Spacing="10" AlignItems="AlignItems.Start" Class="mud-width-full">
+            <MudText Typo="Typo.h5" Align="Align.Start">
+                If you have any questions about my internships, or want to work on a project together, make sure to
+                reach out! Take a look at my skillset to see which technologies i have experience with!
+            </MudText>
+            <MudStack Class="flex-column flex-md-row mud-width-full">
+                <ButtonComponent Variant="Variant.Filled" TextColor="Color.Tertiary" Href="@AppRoutes.ContactUrl">
+                    Contact me here!
+                </ButtonComponent>
+                <ButtonComponent Variant="Variant.Filled" TextColor="Color.Tertiary" Href="@AppRoutes.SkillsetUrl">
+                    View my skillset here!
+                </ButtonComponent>
+            </MudStack>
+        </MudStack>
+    </Section>
+</MudStack>
