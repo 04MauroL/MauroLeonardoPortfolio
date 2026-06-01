@@ -1,9 +1,9 @@
 @page "/Projects"
 @using Portfolio.Frontend.Components
 
-<Section>
-    <MudStack Spacing="20">
+<MudStack Spacing="20">
 
+    <Section>
         <MudStack Spacing="10" AlignItems="AlignItems.Start">
             <SectionTitle>Projects</SectionTitle>
             <MudText Typo="Typo.h4">
@@ -14,9 +14,11 @@
                 Take a look at my skills!
             </ButtonComponent>
         </MudStack>
+    </Section>
 
-        <MudSpacer/>
+    <MudSpacer/>
 
+    <Section>
         <MudStack Spacing="10">
             <MudTimeline Reverse="true">
                 <ProjectTimeLineItem TimeLineDate="February - June, 2025"
@@ -40,5 +42,30 @@
                 </ProjectTimeLineItem>
             </MudTimeline>
         </MudStack>
-    </MudStack>
-</Section>
+    </Section>
+
+    <MudSpacer/>
+
+    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+        <MudStack Spacing="10" AlignItems="AlignItems.Start" Class="mud-width-full">
+            <MudText Typo="Typo.h5" Align="Align.Start">
+                If you have any questions about my projects, or want to work on one together, make sure to
+                reach out! Take a look at my skillset to see which technologies I have experience with!
+            </MudText>
+            <MudStack Class="flex-column flex-md-row mud-width-full">
+                <ButtonComponent Variant="Variant.Filled"
+                                 Color="Color.Tertiary"
+                                 TextColor="Color.Primary"
+                                 Href="@AppRoutes.ContactUrl">
+                    Contact me here!
+                </ButtonComponent>
+                <ButtonComponent Variant="Variant.Filled"
+                                 Color="Color.Tertiary"
+                                 TextColor="Color.Primary"
+                                 Href="@AppRoutes.SkillsetUrl">
+                    View my skillset here!
+                </ButtonComponent>
+            </MudStack>
+        </MudStack>
+    </Section>
+</MudStack>
