@@ -1,0 +1,24 @@
+<MudTimelineItem Color="Color.Primary">
+    <ItemOpposite>
+        <MudText Typo="Typo.h5">@TimeLineDate</MudText>
+    </ItemOpposite>
+    <ItemContent>
+        <MudStack Spacing="10" Class="mud-width-full pa-10">
+            <MudImage Src="@ImageSrc"
+                      Alt="@ImageAlt"
+                      Elevation="3"
+                      Fluid="true"
+                      Class="mud-width-full rounded-xl"/>
+
+            <MudStack Spacing="5">
+                <SectionTitle>
+                    @Title
+                </SectionTitle>
+                <MudText Typo="Typo.h5" Class="mud-width-full">
+                    @Description
+                </MudText>
+                @ChildContent
+            </MudStack>
+        </MudStack>
+    </ItemContent>
+</MudTimelineItem>

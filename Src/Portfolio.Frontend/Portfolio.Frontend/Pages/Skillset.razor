@@ -125,39 +125,43 @@
 
     <MudSpacer/>
 
-    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+    <Section>
         <MudGrid Spacing="20">
             <MudItem xs="12" md="6">
-                <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
-                    <MudImage Src="images/skillset/Angular-Logo.png"
-                              Alt="Angular Logo"
-                              Fluid="true"
-                              Width="300"
-                              Class="mud-theme-tertiary rounded-xl"/>
+                <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text rounded-xl">
+                    <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
+                        <MudImage Src="images/skillset/Angular-Logo.png"
+                                  Alt="Angular Logo"
+                                  Fluid="true"
+                                  Width="300"
+                                  Class="mud-theme-tertiary rounded-xl"/>
 
-                    <MudText Typo="Typo.h5">
-                        <SectionSubTitle>Angular.</SectionSubTitle>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut commodi consequatur ducimus
-                        ea est in ipsam ipsum laudantium nisi nulla omnis pariatur quaerat sed sint sunt totam
-                        velit, veniam!
-                    </MudText>
-                </MudStack>
+                        <MudText Typo="Typo.h5">
+                            <SectionSubTitle>Angular.</SectionSubTitle>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut commodi consequatur ducimus
+                            ea est in ipsam ipsum laudantium nisi nulla omnis pariatur quaerat sed sint sunt totam
+                            velit, veniam!
+                        </MudText>
+                    </MudStack>
+                </Section>
             </MudItem>
 
             <MudItem xs="12" md="6">
-                <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
-                    <MudImage Src="images/skillset/Blazor-Logo.png"
-                              Alt="Blazor Logo"
-                              Fluid="true"
-                              Width="300"
-                              Class="order-md-last mud-theme-tertiary rounded-xl"/>
+                <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text rounded-xl">
+                    <MudStack Spacing="10" AlignItems="AlignItems.Center" Class="flex-md-row">
+                        <MudImage Src="images/skillset/Blazor-Logo.png"
+                                  Alt="Blazor Logo"
+                                  Fluid="true"
+                                  Width="300"
+                                  Class="order-md-last mud-theme-tertiary rounded-xl"/>
 
-                    <MudText Typo="Typo.h5">
-                        <SectionSubTitle>Blazor.</SectionSubTitle>
-                        A frontend framework developed by Microsoft, build on ASP.NET Core, providing the ability to
-                        create reusable components, and use C# instead of JS for logic programming.
-                    </MudText>
-                </MudStack>
+                        <MudText Typo="Typo.h5">
+                            <SectionSubTitle>Blazor.</SectionSubTitle>
+                            A frontend framework developed by Microsoft, build on ASP.NET Core, providing the ability to
+                            create reusable components, and use C# instead of JS for logic programming.
+                        </MudText>
+                    </MudStack>
+                </Section>
             </MudItem>
         </MudGrid>
     </Section>
@@ -194,5 +198,22 @@
     </Section>
 
     <MudSpacer/>
+
+    <Section BackgroundColor="Color.Primary" Class="mud-tertiary-text">
+        <MudStack Spacing="10" AlignItems="AlignItems.Stretch" Style="width: max-content; margin: 0 auto;">
+            <MudText Typo="Typo.h5" Align="Align.Center" Style="white-space: nowrap;">
+                Take a look at my projects to see where I used my skills,<br/>
+                and contact me for more information about what I use!
+            </MudText>
+            <MudStack Row="true">
+                <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary" TextColor="Color.Dark">
+                    View my projects!
+                </ButtonComponent>
+                <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary" TextColor="Color.Dark">
+                    Contact me!
+                </ButtonComponent>
+            </MudStack>
+        </MudStack>
+    </Section>
 </MudStack>
 
