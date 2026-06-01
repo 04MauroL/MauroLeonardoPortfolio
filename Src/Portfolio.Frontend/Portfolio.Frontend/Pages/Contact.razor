@@ -1,0 +1,53 @@
+@page "/Contact"
+@using Portfolio.Frontend.Components
+
+<MudStack Spacing="20">
+    <Section>
+        <MudGrid Spacing="20">
+            <MudHidden Breakpoint="Breakpoint.MdAndDown">
+                <MudItem xs="12" md="5" Class="d-flex">
+                    <MudImage Src="images/home/Mauro.jpg"
+                              Alt="Picture of me"
+                              Elevation="3"
+                              Fluid="true"
+                              ObjectFit="ObjectFit.Cover"
+                              Class="mud-width-full mud-height-full rounded-xl"/>
+                </MudItem>
+            </MudHidden>
+            <MudItem xs="12" md="7">
+                <MudStack Spacing="10" AlignItems="AlignItems.Center">
+                    <SectionTitle>Contact Me</SectionTitle>
+                    <MudText Typo="Typo.h5">
+                        Need a design for your website? Need an idea worked out? Or just want a chat about an IT or
+                        coding
+                        related topic? Don’t hesitate to reach out!
+                    </MudText>
+
+                    <MudForm Spacing="10" Class="mud-width-full">
+                        <MudTextField @bind-Value="_name"
+                                      Label="Your name"
+                                      Variant="Variant.Outlined"
+                                      Class="mud-width-full"/>
+                        <MudTextField @bind-Value="_email"
+                                      Label="Your email"
+                                      Variant="Variant.Outlined"
+                                      Class="mud-width-full"/>
+                        <MudTextField @bind-Value="_subject"
+                                      Label="Subject"
+                                      Variant="Variant.Outlined"
+                                      Class="mud-width-full"/>
+                        <MudTextField @bind-Value="_message"
+                                      Label="Message"
+                                      Variant="Variant.Outlined"
+                                      Lines="3"
+                                      MaxLines="6"
+                                      Class="mud-width-full"/>
+                        <ButtonComponent>
+                            Submit
+                        </ButtonComponent>
+                    </MudForm>
+                </MudStack>
+            </MudItem>
+        </MudGrid>
+    </Section>
+</MudStack>
