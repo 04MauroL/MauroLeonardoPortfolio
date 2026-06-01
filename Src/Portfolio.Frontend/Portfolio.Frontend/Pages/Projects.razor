@@ -1,0 +1,44 @@
+@page "/Projects"
+@using Portfolio.Frontend.Components
+
+<Section>
+    <MudStack Spacing="20">
+
+        <MudStack Spacing="10" AlignItems="AlignItems.Start">
+            <SectionTitle>Projects</SectionTitle>
+            <MudText Typo="Typo.h4">
+                During my four years of taking courses at Thomas More, I have created multiple projects where I used
+                my skills. Take a look at the projects, and make sure to take a look at my relevant skills as well!
+            </MudText>
+            <ButtonComponent FullWidth="false" Href="@AppRoutes.SkillsetUrl">
+                Take a look at my skills!
+            </ButtonComponent>
+        </MudStack>
+
+        <MudSpacer/>
+
+        <MudStack Spacing="10">
+            <MudTimeline Reverse="true">
+                <ProjectTimeLineItem TimeLineDate="February - June, 2025"
+                                     ImageSrc="images/projects/Hotel-Kempenrust.png"
+                                     ImageAlt="Hotel Kempenrust Homepage"
+                                     Title="Hotel Kempenrust"
+                                     Description="During this project, I was the scrum master, and lead my team during the development of the design, and creation of the website for the hotel.">
+                    <ButtonComponent>
+                        View more details here!
+                    </ButtonComponent>
+                </ProjectTimeLineItem>
+
+                <ProjectTimeLineItem TimeLineDate="September - December, 2024"
+                                     ImageSrc="images/projects/TTC-Westel.png"
+                                     ImageAlt="TTC Westel"
+                                     Title="TTC Westel"
+                                     Description="During the course SKIL2, together with a team, I created prototypes in Figma for the club TTC Westel. ">
+                    <ButtonComponent>
+                        View more details here!
+                    </ButtonComponent>
+                </ProjectTimeLineItem>
+            </MudTimeline>
+        </MudStack>
+    </MudStack>
+</Section>
