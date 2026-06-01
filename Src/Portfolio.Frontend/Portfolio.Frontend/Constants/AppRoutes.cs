@@ -8,4 +8,9 @@ public static class AppRoutes
     public const string HomeUrl = "/";
     public const string InternshipsUrl = "/internships";
     public const string ProjectsUrl = "/projects";
+
+    public const string ProjectHotelKempenrustUrl = "hotel-kempenrust";
+    public const string ProjectTtcWestelUrl = "ttc-westel";
+
+    public static string ProjectDetailUrl(string projectName) => $"/project/{projectName}";
 }
