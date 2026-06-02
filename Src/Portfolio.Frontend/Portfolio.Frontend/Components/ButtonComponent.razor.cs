@@ -10,5 +10,6 @@ public partial class ButtonComponent : ComponentBase
     [Parameter] public Color TextColor { get; set; } = Color.Primary;
     [Parameter] public bool FullWidth { get; set; }
     [Parameter] public string? Href { get; set; }
+    [Parameter] public string? Target { get; set; } = "_self";
     [Parameter] public RenderFragment? ChildContent { get; set; }
 }

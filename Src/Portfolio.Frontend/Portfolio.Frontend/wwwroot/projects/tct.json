@@ -1,0 +1,65 @@
+{
+  "title": "Training & Certificate Tracker",
+  "description": "During my 2025 internship at AllPhi Westerlo, I worked as a full-stack developer to create an in-house web application. The 'Training & Certificate Tracker' is an application that makes it easier for consultants to log and track their trainings and certificates, and it provides overhead with a real-time, top-down overview of the consultants in their team, for example regional unit Westerlo, and their trainings and certificates.",
+  "pageDetails": [
+    {
+      "title": "Training history page",
+      "description": "This page provides a consultant the functionality to view their training history, and log a new training. Using this page a consultant can view their training history to know what they have done, and what they are still missing. This is valuable information for consultants to know which training they should follow.",
+      "imageSrc": "images/projects/tct/Training-History.png",
+      "imageAlt": "Training history page"
+    },
+    {
+      "title": "Certificate portfolio page",
+      "description": "Just like the training history page, this page provides a consultant with the functionality to view their certificate portfolio. This page shows all certificates that a consultant has received, and allows the consultant to view the details of each certificate. Logging a certificate is also possible. The portfolio shows a consultant which active certificates they have, which certificates will expire soon and which ones are expired.",
+      "imageSrc": "images/projects/tct/Certificate-Portfolio.png",
+      "imageAlt": "Certificate portfolio page"
+    },
+    {
+      "title": "Team skill matrix",
+      "description": "The team skill page contains a matrix that shows the relation between each consultant of the manager's team, and certificate types. A certificate belongs to a certificate-type to categorize them. The matrix shows for each consultant & certificate type the status of the consultant's last certificate that belongs to the type. The status can be active, expiring or expired.",
+      "imageSrc": "images/projects/tct/Team-Skills.png",
+      "imageAlt": "Team skill page"
+    },
+    {
+      "title": "Expiry alert page",
+      "description": "As said before, a certificate can expire. This page shows a manager all the certificates that are expiring soon and belong to consultants in the manager's team. The manager can view more information about the certificate and the consultant that owns it, like show in the image below.",
+      "imageSrc": "images/projects/tct/Expiry-Alert.png",
+      "imageAlt": "Expiry alert page"
+    }
+  ],
+  "techStackDetails": [
+    {
+      "title": "Angular",
+      "description": "The frontend is build using Angular, version 21. A component-based architecture is used, api services to make calls to the backend, and facades to expose the data to the pages. ",
+      "imageSrc": "images/projects/tct/Angular-Logo.png",
+      "imageAlt": "Angular logo"
+    },
+    {
+      "title": "ASP.NET Core",
+      "description": "The backend is build with ASP.NET Core and .NET 10. Clean architecture and DDD are patterns used to build the backend, together with MediatR for command and query handling. EF Core is used as the ORM. Azure entra id and .NET identity are used to authorize incoming request and authenticate users. The data is sorted in a SQL database, and an Azure Blob Storage is used to save files, like copies of certificates for example. The downloads of the files are SAS-token based to keep the blob storage secure. This all makes for a scalable, robust and modern backend.",
+      "imageSrc": "images/projects/tct/AspNetCore-Logo.png",
+      "imageAlt": "ASP .NET Core logo"
+    },
+    {
+      "title": "Aspire",
+      "description": "Aspire is used in this project to start both the frontend and backend, together with the database and blob storage. This makes it easier to start the project, to work on it, and for colleagues to pick up where I left.",
+      "imageSrc": "images/projects/tct/Aspire-Logo.jpg",
+      "imageAlt": "Aspire logo"
+    }
+  ],
+  "conclusion": "This project taught me how to work individually as a full-stack developer. I did not have a mentor that guided me all the time, so I had to do a lot of research myself, and ask my colleagues for help when needed. As a consultant, working individually is a required skill, and this internship helped me improve this skill. I worked with modern technologies and patterns to build this application. This provides AllPhi with the ability to extend or work on this application in the future, and gives me relevant hands-on experience with the technologies used in today's application development.",
+  "downloadableFiles": [
+    {
+      "name": "Download the realisation document",
+      "url": "files/"
+    },
+    {
+      "name": "Download the project planning",
+      "url": "files/"
+    },
+    {
+      "name": "Download the project reflection",
+      "url": "files/"
+    }
+  ]
+}

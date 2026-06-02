@@ -59,7 +59,7 @@ else
         <MudSpacer/>
 
         <Section>
-            <MudStack Spacing="20" AlignItems="AlignItems.Center" Class="flex-column flex-md-row">
+            <MudGrid Spacing="20">
                 @foreach (var stack in ProjectInfoDetails.TechStackDetails)
                 {
                     <MudItem xs="12" md="6">
@@ -77,10 +77,13 @@ else
                                       Class="rounded-xl"/>
                         </MudStack>
                     </MudItem>
+                    <MudSpacer/>
                 }
-            </MudStack>
+            </MudGrid>
         </Section>
 
+        <MudSpacer/>
+        
         @if (ProjectInfoDetails.DownloadableFiles is not null)
         {
             <Section>

@@ -9,6 +9,7 @@ public static class AppRoutes
     public const string InternshipsUrl = "/internships";
     public const string ProjectsUrl = "/projects";
 
+    public const string InternshipTctUrl = "tct";
     public const string InternshipCmsUrl = "cms";
 
     public const string ProjectTrackleUrl = "trackle";

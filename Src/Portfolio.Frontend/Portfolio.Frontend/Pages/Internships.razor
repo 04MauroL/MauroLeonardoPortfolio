@@ -9,11 +9,8 @@
                     <SectionTitle>Internships</SectionTitle>
                     <MudText Typo="Typo.h5">
                         To achieve my diploma's, I completed two internships at AllPhi in Westerlo. Take a look at my
-                        internships to see my hands-on experiences. And make sure to take a look at my skillset as well!
+                        internships to see my hands-on experiences.
                     </MudText>
-                    <ButtonComponent Href="@AppRoutes.SkillsetUrl">
-                        Take a look at my skills!
-                    </ButtonComponent>
                 </MudStack>
             </MudItem>
 
@@ -51,7 +48,9 @@
                             tasked to develop an in-house application with Angular 21 and ASP.NET Core with .NET 10.
                             This application is called the 'Training & Certificate Tracker'.
                         </MudText>
-                        <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary">
+                        <ButtonComponent Variant="Variant.Filled"
+                                         Color="Color.Tertiary"
+                                         Href="@AppRoutes.ProjectDetailUrl(AppRoutes.InternshipTctUrl)">
                             View details!
                         </ButtonComponent>
                     </MudStack>
@@ -73,7 +72,8 @@
                             with creating an in-house application which centralizes all consultant data & information.
                             This platform is application the 'Consultant Management System'.
                         </MudText>
-                        <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary"
+                        <ButtonComponent Variant="Variant.Filled"
+                                         Color="Color.Tertiary"
                                          Href="@AppRoutes.ProjectDetailUrl(AppRoutes.InternshipCmsUrl)">
                             View details!
                         </ButtonComponent>

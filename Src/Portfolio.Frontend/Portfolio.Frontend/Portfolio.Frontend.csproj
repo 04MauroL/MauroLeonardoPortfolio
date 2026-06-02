@@ -22,6 +22,7 @@
     </Target>
 
     <ItemGroup>
+        <Folder Include="wwwroot\files\"/>
         <Folder Include="wwwroot\images\home\"/>
         <Folder Include="wwwroot\images\projects\hotel-kempenrust\"/>
         <Folder Include="wwwroot\images\skillset\"/>
