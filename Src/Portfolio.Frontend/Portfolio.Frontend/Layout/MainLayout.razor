@@ -3,14 +3,15 @@
 <MudPopoverProvider/>
 <MudThemeProvider Theme="_theme"/>
 
-<MudLayout id="main-layout">
+<MudLayout Class="d-flex flex-column mud-height-full">
     <NavigationComponent/>
 
-    <MudMainContent Class="pa-0 py-md-20">
+    <MudMainContent Class="flex-grow-1 pa-0 py-md-20">
         @Body
 
         <MudScrollToTop TopOffset="100">
-            <MudIconButton Variant="Variant.Filled" Icon="@Icons.Material.Filled.ArrowUpward" Color="Color.Primary"/>
+            <MudIconButton Variant="Variant.Filled" Icon="@Icons.Material.Filled.ArrowUpward"
+                           Color="Color.Primary"/>
         </MudScrollToTop>
     </MudMainContent>
 
