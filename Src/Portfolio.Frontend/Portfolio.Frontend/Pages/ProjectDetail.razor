@@ -13,9 +13,9 @@ else
 {
     <MudStack Spacing="10">
         <Section>
-            <MudStack Spacing="5" AlignItems="AlignItems.Center">
+            <MudStack Spacing="5">
                 <SectionTitle>@ProjectInfoDetails.Title</SectionTitle>
-                <MudText Typo="Typo.h5" Align="Align.Center">
+                <MudText Typo="Typo.h5">
                     @ProjectInfoDetails.Description
                 </MudText>
             </MudStack>
@@ -92,6 +92,17 @@ else
                 </MudStack>
             </Section>
         }
+
+        <MudSpacer/>
+
+        <Section>
+            <MudStack Spacing="10">
+                <SectionTitle>Conclusion</SectionTitle>
+                <MudText Typo="Typo.h5">
+                    @(ProjectInfoDetails.Conclusion)
+                </MudText>
+            </MudStack>
+        </Section>
 
         <MudSpacer/>
 
