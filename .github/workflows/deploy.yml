@@ -1,0 +1,65 @@
+name: Deploy Blazor WASM to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Publish Blazor WASM
+        run: dotnet publish Src/Portfolio.Frontend/Portfolio.Frontend/Portfolio.Frontend.csproj -c Release -o publish
+
+      - name: Ensure project base href
+        run: |
+          INDEX_PATH=$(find publish -name "index.html" | head -1)
+          echo "Found index.html at: $INDEX_PATH"
+          if [ -z "$INDEX_PATH" ]; then
+            echo "index.html not found; failing"
+            exit 1
+          fi
+          # GitHub Pages project site path for this repo.
+          perl -0777 -pe 's#<base\s+href=.*?>#<base href="/MauroLeonardoPortfolio/" />#is' -i "$INDEX_PATH"
+          echo "New base tag:" ; grep -i '<base' "$INDEX_PATH" || true
+          echo "First 20 lines of index.html:" ; head -n 20 "$INDEX_PATH" || true
+
+      - name: Add .nojekyll file
+        run: |
+          WWWROOT=$(find publish -name "wwwroot" -type d | head -1)
+          echo "Found wwwroot at: $WWWROOT"
+          if [ -z "$WWWROOT" ]; then
+            echo "wwwroot folder not found; failing"
+            exit 1
+          fi
+          touch "$WWWROOT/.nojekyll"
+          echo "Uploading from: $WWWROOT"
+          ls -la "$WWWROOT"
+          echo "WWWROOT=$WWWROOT" >> $GITHUB_ENV
+
+      - name: Upload static site for GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ env.WWWROOT }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
