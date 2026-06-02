@@ -7,10 +7,12 @@ public sealed class ProjectInfo
     public List<ProjectDetail> PageDetails { get; init; }
     public List<ProjectDetail> TechStackDetails { get; init; }
     public List<ProjectFile>? DownloadableFiles { get; init; }
+    public string Conclusion { get; init; }
 
     public ProjectInfo(
         string title,
         string description,
+        string conclusion,
         List<ProjectDetail> pageDetails,
         List<ProjectDetail> techStackDetails,
         List<ProjectFile>? downloadableFiles = null)
@@ -20,5 +22,6 @@ public sealed class ProjectInfo
         PageDetails = pageDetails;
         TechStackDetails = techStackDetails;
         DownloadableFiles = downloadableFiles;
+        Conclusion = conclusion;
     }
 }

@@ -1,6 +1,6 @@
 {
   "title": "TTC Westel",
-  "description": "This website was created for the table tennis club in Westerlo. It was developed during the first semester of the Applied Computer Science bachelor program for the course Skills Integration Lab 2. The project includes a full prototype designed in Figma and later developed into a functional website. This project was a team project. I worked on this with 4 other students. Below, I will show different pages of the application that I created or helped creating",
+  "description": "This website was created for the table tennis club in Westerlo. It was developed during the first semester of the Applied Computer Science bachelor program for the course Skills Integration Lab 2. The project includes a full prototype designed in Figma and later developed into a functional website. This project was a team project. I worked on this with 4 other students. Below, I will show different pages of the application that I created or helped creating.",
   "pageDetails": [
     {
       "title": "Sign page for season",
@@ -41,5 +41,6 @@
       "imageAlt": "Figma logo"
     }
   ],
+  "conclusion": "My goal is to be a frontend developer in the future. To build an application, having prototypes of the application is very important. Having a prototype allows me to see how the application will look like, and how it will work. It makes it easier to present a possible layout to the client, and make changes quick. Figma is used a lot to make prototypes, so this project really helped me master my Figma skills and make me a better frontend developer.",
   "downloadableFiles": null
 }

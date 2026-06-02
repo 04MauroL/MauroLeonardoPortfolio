@@ -5,45 +5,39 @@
     {
       "title": "Swim lesson overview",
       "description": "The teacher can change the hour or cancel a lesson if needed, or take a look at everyone who will attend a specific lesson. The teacher can choose a lesson here.",
-      "imageSrc": "images/projects/hotelkempenrust/Swim-Lesson-Overview.png",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Overview.png",
       "imageAlt": "Swim lesson overview page"
     },
     {
       "title": "Swim lesson appointments",
       "description": "On this page, the teacher can view all the appointments that are made for a specific swimming lesson during the week. This includes the children that will attend the lessons.",
-      "imageSrc": "images/projects/hotelkempenrust/Swim-Lesson-Appointments.png",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Appointments.png",
       "imageAlt": "Swim lesson appointments page"
     },
     {
       "title": "Swim lesson changes",
       "description": "This is where the teacher can actually change details from lessons.",
-      "imageSrc": "images/projects/hotelkempenrust/Swim-Lesson-Changes.png",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Changes.png",
       "imageAlt": "Swim lesson changes page"
     },
     {
       "title": "Manage swim lesson",
       "description": "The manager from the swimming pool can change lesson specific details permanently, not for one week like the teacher; these changes are made permanently.",
-      "imageSrc": "images/projects/hotelkempenrust/Manage-Swim-Lesson.png",
+      "imageSrc": "images/projects/hotel-kempenrust/Manage-Swim-Lesson.png",
       "imageAlt": "Manage swim lesson page"
     },
     {
       "title": "Pop ups",
-      "description": "I created a lot of pop-ups that add functionality to the pages. Here are some examples.",
-      "imageSrc": "images/projects/hotelkempenrust/Popups.png",
-      "imageAlt": "Pop-up examples"
+      "description": "I created a lot of pop-ups that add functionality to the pages. Here is an example.",
+      "imageSrc": "images/projects/hotel-kempenrust/Popup.png",
+      "imageAlt": "Pop-up example"
     }
   ],
   "techStackDetails": [
     {
       "title": "TALL-stack",
-      "description": "After the prototypes were created in Figma, we used TALL-stack, which is Tailwind CSS, AlpineJS, Laravel and Livewire.",
-      "imageSrc": "images/projects/hotelkempenrust/TALL-Stack.png",
-      "imageAlt": "TALL stack logo"
-    },
-    {
-      "title": "Laravel",
-      "description": "Both the front- & back-end are created using Laravel. Tailwind makes styling easy while Alpine makes the design interactive. Livewire & Laravel make it possible to program everything with PHP instead of using full JS, and add the MVC pattern. Alpine fills the gaps.",
-      "imageSrc": "images/projects/hotelkempenrust/Laravel-Logo.png",
+      "description": "After the prototypes were created in Figma, we used TALL-stack, which is Tailwind CSS, AlpineJs, Laravel and Livewire. Both the front- & back-end are created using laravel.Tailwind makes styling easy while alpine makes the design intractable. Livewire & Laravel makes it possible to program everything with PHP instead of using full JS, and adds the MVC pattern. Alpine fills the gaps. ",
+      "imageSrc": "images/projects/hotel-kempenrust/Laravel-Logo.png",
       "imageAlt": "Laravel logo"
     }
   ],
