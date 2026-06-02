@@ -36,7 +36,7 @@
     },
     {
       "title": "ASP.NET Core",
-      "description": "The API that provides the data for the application is build using ASP.NET Core. I used tools like Mediatr, xUnit, Serilog and Seq to create and test a REST API. The backend is designed using the vertical slice pattern.",
+      "description": "The API that provides the data for the application is build using ASP.NET Core. I used tools like MediatR, xUnit, Serilog and Seq to create and test a REST API. The backend is designed using the vertical slice pattern.",
       "imageSrc": "images/projects/cms/AspNetCore-Logo.png",
       "imageAlt": "ASP .NET Core logo"
     }

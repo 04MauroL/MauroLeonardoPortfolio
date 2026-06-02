@@ -36,7 +36,7 @@
     },
     {
       "title": "ASP.NET Core",
-      "description": "The backend is build with ASP.NET Core and .NET 10. Clean architecture and DDD are patterns used to build the backend, together with MediatR for command and query handling. EF Core is used as the ORM. Azure entra id and .NET identity are used to authorize incoming request and authenticate users. The data is sorted in a SQL database, and an Azure Blob Storage is used to save files, like copies of certificates for example. The downloads of the files are SAS-token based to keep the blob storage secure. This all makes for a scalable, robust and modern backend.",
+      "description": "The backend is build with ASP.NET Core and .NET 10. Clean architecture and DDD are patterns used to build the backend, together with MediatR for command and query handling. EF Core is used as the ORM. Azure Entra ID and .NET identity are used to authorize incoming request and authenticate users. The data is sorted in a SQL database, and an Azure Blob Storage is used to save files, like copies of certificates for example. The downloads of the files are SAS-token based to keep the blob storage secure. This all makes for a scalable, robust and modern backend.",
       "imageSrc": "images/projects/tct/AspNetCore-Logo.png",
       "imageAlt": "ASP .NET Core logo"
     },

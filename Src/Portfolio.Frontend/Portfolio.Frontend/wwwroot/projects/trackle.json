@@ -1,10 +1,10 @@
 {
   "title": "Trackle - EchoTrack",
-  "description": "During this team project, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel. They work together with Infrabel to create an application that makes the communication between train drivers/guards and the dispatchers easier and better. We created a prototype based in this application that used AI to summarize and detect important keywords, timestamps, locations... so we could show this to the dispatcher. AI is also used to create a summary of the call at the end, and a live transciption during the call. As an application developer, I worked together with another app student to create the frontend for the demo, and the backend that is the 'middleman' between the frontend and the AI model.",
+  "description": "During this team project, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel. They work together with Infrabel to create an application that makes the communication between train drivers/guards and the dispatchers easier and better. We created a prototype based in this application that used AI to summarize and detect important keywords, timestamps, locations... so we could show this to the dispatcher. AI is also used to create a summary of the call at the end, and a live transcription during the call. As an application developer, I worked together with another app student to create the frontend for the demo, and the backend that is the 'middleman' between the frontend and the AI model.",
   "pageDetails": [
     {
       "title": "Ongoing call screen",
-      "description": "The left side of the screen is blank, but the actual application has funtionality here. The right side contains the keywords spotted by the AI model, and an option to show the full transcript or call suggested services.",
+      "description": "The left side of the screen is blank, but the actual application has functionality here. The right side contains the keywords spotted by the AI model, and an option to show the full transcript or call suggested services.",
       "imageSrc": "images/projects/trackle/Ongoing-Call.png",
       "imageAlt": "Ongoing call screen"
     },
@@ -18,13 +18,13 @@
       "title": "API endpoints",
       "description": "The backend exposes multiple endpoints that allow the frontend to get information about the call, save information when the call is finished, and get information from the AI model via the websocket. Health checks give the frontend the ability to check if the API is up and running",
       "imageSrc": "images/projects/trackle/API-Endpoints.png",
-      "imageAlt": "Api endpoints"
+      "imageAlt": "API endpoints"
     }
   ],
   "techStackDetails": [
     {
       "title": "React",
-      "description": "We chose ReactJS as the frontend framework to build our proof of concept. RideOntrack also uses ReactJS for their newer applications, so this was a good choice for us to learn and for them to implement our ideas. The connection between the frontend and backend works via two ways: API calls and via websocket. Websocket is used to keep an ongoing connection to transfer data, like clicking a suggested option, to the backend, and information coming from the AI to the frontend. I build the frontend together with the figma protorypes during this project.",
+      "description": "We chose ReactJS as the frontend framework to build our proof of concept. RideOntrack also uses ReactJS for their newer applications, so this was a good choice for us to learn and for them to implement our ideas. The connection between the frontend and backend works via two ways: API calls and via websocket. Websocket is used to keep an ongoing connection to transfer data, like clicking a suggested option, to the backend, and information coming from the AI to the frontend. I build the frontend together with the Figma prototypes during this project.",
       "imageSrc": "images/projects/trackle/React-Logo.png",
       "imageAlt": "React logo"
     },

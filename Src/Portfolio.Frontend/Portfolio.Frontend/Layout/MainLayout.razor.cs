@@ -9,7 +9,7 @@ public partial class MainLayout : LayoutComponentBase
     {
         PaletteLight = new PaletteLight
         {
-            Primary = "#596235",
+            Primary = "#4C6991",
             Secondary = Colors.LightGreen.Darken2,
             Tertiary = Colors.Gray.Lighten4,
             Background = Colors.Gray.Lighten4,
