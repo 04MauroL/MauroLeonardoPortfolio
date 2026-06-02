@@ -1,0 +1,46 @@
+{
+  "title": "Consultant Management System",
+  "description": "During my 2024 internship at AllPhi Westerlo, I collaborated with my fellow intern Govart to develop the Consultant Management System (CMS). The CMS is designed to serve as a single platform where HR can access all consultant data and update it across other platforms such as Salesforce, SD Worx, and others.",
+  "pageDetails": [
+    {
+      "title": "Home page",
+      "description": "The home page shows relevant consultant information, to get an overview of AllPhi in general.",
+      "imageSrc": "images/projects/cms/Home.png",
+      "imageAlt": "CMS home page"
+    },
+    {
+      "title": "Consultant overview page",
+      "description": "Shows all info about all consultants. Filters and search bar enables HR to find specific consultants with ease.",
+      "imageSrc": "images/projects/cms/Consultant-Overview.png",
+      "imageAlt": "CMS consultant overview page"
+    },
+    {
+      "title": "Consultant detail page",
+      "description": "The details page for a specific consultant. Information about the consultant itself, their experiences and the current project.",
+      "imageSrc": "images/projects/cms/Consultant-Detail.png",
+      "imageAlt": "CMS consultant detail page"
+    },
+    {
+      "title": "Dashboard page",
+      "description": "This page shows details about the work & projects of consultants. HR can filter on office, Gent, Brussels & Westerlo.",
+      "imageSrc": "images/projects/cms/Dashboard.png",
+      "imageAlt": "CMS dashboard page"
+    }
+  ],
+  "techStackDetails": [
+    {
+      "title": "Blazor",
+      "description": "Using Blazor, I created the front-end of CMS. I used best practices, created as much reusable components as made sense, and used tools like Polly to make it as reliable as possible.",
+      "imageSrc": "images/projects/cms/Blazor-Logo.png",
+      "imageAlt": "Blazor logo"
+    },
+    {
+      "title": "ASP.NET Core",
+      "description": "The API that provides the data for the application is build using ASP.NET Core. I used tools like MediatR, xUnit, Serilog and Seq to create and test a REST API. The backend is designed using the vertical slice pattern.",
+      "imageSrc": "images/projects/cms/AspNetCore-Logo.png",
+      "imageAlt": "ASP .NET Core logo"
+    }
+  ],
+  "conclusion": "I learned a lot about Blazor and ASP.NET Core, and how to create a reliable and scalable application. I also learned how to use tools like Polly to make the application more reliable. This internship gave me hands-on experience with working Agile in a team, how to build an application as a full-stack developer, and how real world enterprise apps work and are constructed.",
+  "downloadableFiles": null
+}

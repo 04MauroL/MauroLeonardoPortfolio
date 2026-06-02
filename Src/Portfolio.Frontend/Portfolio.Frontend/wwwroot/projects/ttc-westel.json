@@ -1,0 +1,46 @@
+{
+  "title": "TTC Westel",
+  "description": "This website was created for the table tennis club in Westerlo. It was developed during the first semester of the Applied Computer Science bachelor program for the course Skills Integration Lab 2. The project includes a full prototype designed in Figma and later developed into a functional website. This project was a team project. I worked on this with 4 other students. Below, I will show different pages of the application that I created or helped creating.",
+  "pageDetails": [
+    {
+      "title": "Sign page for season",
+      "description": "Every season, players of the club have to sign a seasonal contract. Without this they cannot attend lessons or play in tournaments.",
+      "imageSrc": "images/projects/ttc-westel/Sign-Season.png",
+      "imageAlt": "TTC Westel season sign-up page"
+    },
+    {
+      "title": "Competition page",
+      "description": "All played competition need to be added to the website. The managers & admins can add a competition matches here.",
+      "imageSrc": "images/projects/ttc-westel/Competition.png",
+      "imageAlt": "TTC Westel manage competition page"
+    },
+    {
+      "title": "Register trainings page",
+      "description": "Players need to train for their competition matches. On this page, a training can register slots for trainings, which players can later choose from.",
+      "imageSrc": "images/projects/ttc-westel/Register-Trainings.png",
+      "imageAlt": "TTC Westel register training slots page"
+    },
+    {
+      "title": "Live score page",
+      "description": "During a competition, players can see the live score of the competition. Club leaders can enter the live score of the competition here.",
+      "imageSrc": "images/projects/ttc-westel/Live-Scoring.png",
+      "imageAlt": "TTC Westel live scoring page"
+    },
+    {
+      "title": "Manage materials page",
+      "description": "A player can upload materials for their training here. The materials will be bought by the trainer or club leader and delivered to the players before the due date.",
+      "imageSrc": "images/projects/ttc-westel/Manage-Materials.png",
+      "imageAlt": "TTC Westel manage materials page"
+    }
+  ],
+  "techStackDetails": [
+    {
+      "title": "Figma",
+      "description": "The project started with a full Figma prototype, which defined the layout, interactions, and user flow.",
+      "imageSrc": "images/projects/ttc-westel/Figma-Logo.png",
+      "imageAlt": "Figma logo"
+    }
+  ],
+  "conclusion": "My goal is to be a frontend developer in the future. To build an application, having prototypes of the application is very important. Having a prototype allows me to see how the application will look like, and how it will work. It makes it easier to present a possible layout to the client, and make changes quick. Figma is used a lot to make prototypes, so this project really helped me master my Figma skills and make me a better frontend developer.",
+  "downloadableFiles": null
+}

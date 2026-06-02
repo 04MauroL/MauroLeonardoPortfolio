@@ -1,0 +1,46 @@
+{
+  "title": "Hotel Kempenrust",
+  "description": "During this team project, we developed a new website for the swimming pool at Hotel Kempenrust. I worked in a team of six students and had the opportunity to serve as the Scrum Master! Read this page to view my contribution to the website.",
+  "pageDetails": [
+    {
+      "title": "Swim lesson overview",
+      "description": "The teacher can change the hour or cancel a lesson if needed, or take a look at everyone who will attend a specific lesson. The teacher can choose a lesson here.",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Overview.png",
+      "imageAlt": "Swim lesson overview page"
+    },
+    {
+      "title": "Swim lesson appointments",
+      "description": "On this page, the teacher can view all the appointments that are made for a specific swimming lesson during the week. This includes the children that will attend the lessons.",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Appointments.png",
+      "imageAlt": "Swim lesson appointments page"
+    },
+    {
+      "title": "Swim lesson changes",
+      "description": "This is where the teacher can actually change details from lessons.",
+      "imageSrc": "images/projects/hotel-kempenrust/Swim-Lesson-Changes.png",
+      "imageAlt": "Swim lesson changes page"
+    },
+    {
+      "title": "Manage swim lesson",
+      "description": "The manager from the swimming pool can change lesson specific details permanently, not for one week like the teacher; these changes are made permanently.",
+      "imageSrc": "images/projects/hotel-kempenrust/Manage-Swim-Lesson.png",
+      "imageAlt": "Manage swim lesson page"
+    },
+    {
+      "title": "Pop ups",
+      "description": "I created a lot of pop-ups that add functionality to the pages. Here is an example.",
+      "imageSrc": "images/projects/hotel-kempenrust/Popup.png",
+      "imageAlt": "Pop-up example"
+    }
+  ],
+  "techStackDetails": [
+    {
+      "title": "TALL-stack",
+      "description": "After the prototypes were created in Figma, we used TALL-stack, which is Tailwind CSS, AlpineJs, Laravel and Livewire. Both the front- & back-end are created using Laravel. Tailwind makes styling easy while Alpine makes the design interactive. Livewire & Laravel makes it possible to program everything with PHP instead of using full JS, and adds the MVC pattern. Alpine fills the gaps. ",
+      "imageSrc": "images/projects/hotel-kempenrust/Laravel-Logo.png",
+      "imageAlt": "Laravel logo"
+    }
+  ],
+  "conclusion": "This team project taught me how important clear communication and collaboration are when building a web application. As Scrum Master, I learned how to keep the team organized, support progress, and make sure everyone stayed aligned. I also gained more experience with Laravel, Livewire, and Alpine, and I learned how to turn a Figma prototype into a functional website. Overall, this project helped me grow both technically and as a team member.",
+  "downloadableFiles": null
+}

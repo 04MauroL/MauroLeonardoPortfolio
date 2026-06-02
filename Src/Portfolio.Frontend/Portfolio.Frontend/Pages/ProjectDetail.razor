@@ -1,0 +1,126 @@
+@page "/project/{ProjectName}"
+@using Portfolio.Frontend.Components
+
+@if (ProjectInfoDetails is null)
+{
+    <MudStack Justify="Justify.Center" AlignItems="AlignItems.Center"
+              Class="mud-width-full mud-height-full">
+        <MudText Typo="Typo.h5" Align="Align.Center">Loading project details...</MudText>
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true"/>
+    </MudStack>
+}
+else
+{
+    <MudStack Spacing="10">
+        <Section>
+            <MudStack Spacing="5">
+                <SectionTitle>@ProjectInfoDetails.Title</SectionTitle>
+                <MudText Typo="Typo.h5">
+                    @ProjectInfoDetails.Description
+                </MudText>
+            </MudStack>
+        </Section>
+
+        <MudSpacer/>
+
+        <Section>
+            <MudStack Spacing="20">
+                @for (var i = 0; i < ProjectInfoDetails.PageDetails.Count; i++)
+                {
+                    var page = ProjectInfoDetails.PageDetails[i];
+                    var alignClass = i % 2 == 0 ? "align-self-start" : "align-self-end";
+                    <MudItem xs="12" md="8" Class="@($"mud-tertiary-text {alignClass}")">
+                        <Section BackgroundColor="Color.Primary" Class="rounded-xl">
+                            <MudStack Spacing="20">
+                                <MudStack Spacing="10">
+                                    <SectionTitle>
+                                        @(page.Title)
+                                    </SectionTitle>
+                                    <MudText Typo="Typo.h5">
+                                        @(page.Description)
+                                    </MudText>
+                                </MudStack>
+
+                                <MudImage Src="@(page.ImageSrc)"
+                                          Alt="@(page.ImageAlt)"
+                                          Elevation="3"
+                                          Fluid="true"
+                                          Class="rounded-xl"/>
+                            </MudStack>
+                        </Section>
+                    </MudItem>
+
+                    <MudSpacer/>
+                }
+            </MudStack>
+
+        </Section>
+
+        <MudSpacer/>
+
+        <Section>
+            <MudGrid Spacing="20">
+                @foreach (var stack in ProjectInfoDetails.TechStackDetails)
+                {
+                    <MudItem xs="12" md="6">
+                        <MudStack Row="true" AlignItems="AlignItems.Center">
+                            <MudStack Spacing="5" Class="mud-width-full">
+                                <SectionSubTitle>@(stack.Title)</SectionSubTitle>
+                                <MudText Typo="Typo.h5">
+                                    @(stack.Description)
+                                </MudText>
+                            </MudStack>
+                            <MudImage Src="@(stack.ImageSrc)"
+                                      Alt="@(stack.ImageAlt)"
+                                      Fluid="true"
+                                      Width="300"
+                                      Class="rounded-xl"/>
+                        </MudStack>
+                    </MudItem>
+                    <MudSpacer/>
+                }
+            </MudGrid>
+        </Section>
+
+        <MudSpacer/>
+
+        @if (ProjectInfoDetails.DownloadableFiles is not null)
+        {
+            <Section>
+                <MudStack Spacing="10" Class="flex-column flex-md-row">
+                    @foreach (var file in ProjectInfoDetails.DownloadableFiles)
+                    {
+                        <ButtonComponent Href="@(file.Url)">@(file.Name)</ButtonComponent>
+                    }
+                </MudStack>
+            </Section>
+        }
+
+        <MudSpacer/>
+
+        <Section>
+            <MudStack Spacing="10">
+                <SectionTitle>Conclusion</SectionTitle>
+                <MudText Typo="Typo.h5">
+                    @(ProjectInfoDetails.Conclusion)
+                </MudText>
+            </MudStack>
+        </Section>
+
+        @* <MudSpacer/> *@
+        @* *@
+        @* <Section BackgroundColor="Color.Primary" class="mud-tertiary-text"> *@
+        @*     <MudStack Spacing="10" AlignItems="AlignItems.Start" Class="mud-width-full"> *@
+        @*         <MudText Typo="Typo.h5" Align="Align.Start"> *@
+        @*             If you have any questions about my projects, or want to work on one together, make sure to reach *@
+        @*             out! *@
+        @*         </MudText> *@
+        @*         <MudStack Class="flex-column flex-md-row mud-width-full"> *@
+        @*             <ButtonComponent Variant="Variant.Filled" Color="Color.Tertiary" Href="@AppRoutes.ContactUrl"> *@
+        @*                 Contact me here! *@
+        @*             </ButtonComponent> *@
+        @*         </MudStack> *@
+        @*     </MudStack> *@
+        @* </Section> *@
+    </MudStack>
+}
