@@ -1,0 +1,40 @@
+{
+  "title": "Trackle - EchoTrack",
+  "description": "During this team project, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel. They work together with Infrabel to create an application that makes the communication between train drivers/guards and the dispatchers easier and better. We created a prototype based in this application that used AI to summarize and detect important keywords, timestamps, locations... so we could show this to the dispatcher. AI is also used to create a summary of the call at the end, and a live transciption during the call. As an application developer, I worked together with another app student to create the frontend for the demo, and the backend that is the 'middleman' between the frontend and the AI model.",
+  "pageDetails": [
+    {
+      "title": "Ongoing call screen",
+      "description": "The left side of the screen is blank, but the actual application has funtionality here. The right side contains the keywords spotted by the AI model, and an option to show the full transcript or call suggested services.",
+      "imageSrc": "images/projects/trackle/Ongoing-Call.png",
+      "imageAlt": "Ongoing call screen"
+    },
+    {
+      "title": "Accept suggestion",
+      "description": "The previous image shows the ongoing call screen with an option to call the suggested services. This image shows the screen after the user has accepted the suggestion. The accepted action is shown on the right side of the screen, like a text message between the dispatcher and the caller. This makes it easy for the dispatcher to see the order of events, both during and after the call.",
+      "imageSrc": "images/projects/trackle/Accept-Suggestion.png",
+      "imageAlt": "Ongoing call screen"
+    },
+    {
+      "title": "API endpoints",
+      "description": "The backend exposes multiple endpoints that allow the frontend to get information about the call, save information when the call is finished, and get information from the AI model via the websocket. Health checks give the frontend the ability to check if the API is up and running",
+      "imageSrc": "images/projects/trackle/API-Endpoints.png",
+      "imageAlt": "Api endpoints"
+    }
+  ],
+  "techStackDetails": [
+    {
+      "title": "React",
+      "description": "We chose ReactJS as the frontend framework to build our proof of concept. RideOntrack also uses ReactJS for their newer applications, so this was a good choice for us to learn and for them to implement our ideas. The connection between the frontend and backend works via two ways: API calls and via websocket. Websocket is used to keep an ongoing connection to transfer data, like clicking a suggested option, to the backend, and information coming from the AI to the frontend. I build the frontend together with the figma protorypes during this project.",
+      "imageSrc": "images/projects/trackle/React-Logo.png",
+      "imageAlt": "React logo"
+    },
+    {
+      "title": "ASP.NET Core",
+      "description": "ASP.NET Core is the backend framework we used for this project. My colleague build the backend because he did not have any experience with CQRS so this was a good choice for him to learn. I helped him during the development of the backend because I have experience with this kind of backend. We used clean architecture to structure the backend project, and used websocket to connect the backend with the frontend as discussed before. The backend uses another websocket connection to get information from the AI-models.",
+      "imageSrc": "images/projects/trackle/AspNetCore-Logo.png",
+      "imageAlt": "ASP.NET Core logo"
+    }
+  ],
+  "conclusion": "This project was a great learning experience for me, and I learned a lot about ReactJS and websocket. I learned how I could build an application that creates a continuous communication between it and the backend. Working with students from the security and AI studies taught me what is required to create a full stack application, from running it (hardware, security, cloud...) to building it (frontend & backend) and running extra services like the AI-models.",
+  "downloadableFiles": null
+}

@@ -11,6 +11,7 @@ public static class AppRoutes
 
     public const string InternshipCmsUrl = "cms";
 
+    public const string ProjectTrackleUrl = "trackle";
     public const string ProjectHotelKempenrustUrl = "hotel-kempenrust";
     public const string ProjectTtcWestelUrl = "ttc-westel";
 

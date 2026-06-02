@@ -25,15 +25,10 @@
     <Section>
         <MudGrid Spacing="20" Justify="Justify.SpaceAround" Class="my-md-20">
             <MudItem xs="12" md="5">
-                <MudStack Spacing="20">
-                    <MudStack Spacing="6">
-                        <MudText Typo="Typo.h4" Align="Align.Center">
-                            <b>Get to know me!</b>
-                        </MudText>
-                        <MudText Typo="Typo.h6" Align="Align.Center">
-                            I’m a 21 year old Application Developer.
-                        </MudText>
-                    </MudStack>
+                <MudStack Spacing="6">
+                    <MudText Typo="Typo.h4" Align="Align.Center">
+                        <b>Get to know me!</b>
+                    </MudText>
 
                     <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Passion.png"
@@ -50,23 +45,8 @@
                         <ButtonComponent Href="@AppRoutes.AboutUrl">Learn more about me!</ButtonComponent>
                     </MudStack>
 
-                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
-                        <MudImage Src="images/home/Skillset.jpg" Alt="Skillset" Elevation="0"
-                                  Class="shadow-none rounded-xl"
-                                  Fluid="true"/>
-                        <MudText Typo="Typo.h6" Align="Align.Center">
-                            <SectionSubTitle>Skillset.</SectionSubTitle>
-                            Creating delightful and enjoyable user interfaces and experiences requires the right tools
-                            and a strong set of skills.
-                        </MudText>
+                    <MudSpacer/>
 
-                        <ButtonComponent Href="@AppRoutes.SkillsetUrl">View my skillset!</ButtonComponent>
-                    </MudStack>
-                </MudStack>
-            </MudItem>
-
-            <MudItem xs="12" md="5">
-                <MudStack Spacing="20">
                     <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Internships.png"
                                   Alt="Internships"
@@ -83,6 +63,25 @@
 
                         <ButtonComponent>View my internships!</ButtonComponent>
                     </MudStack>
+                </MudStack>
+            </MudItem>
+
+            <MudItem xs="12" md="5">
+                <MudStack Spacing="20">
+                    <MudStack Spacing="6" AlignItems="AlignItems.Center">
+                        <MudImage Src="images/home/Skillset.jpg" Alt="Skillset" Elevation="0"
+                                  Class="shadow-none rounded-xl"
+                                  Fluid="true"/>
+                        <MudText Typo="Typo.h6" Align="Align.Center">
+                            <SectionSubTitle>Skillset.</SectionSubTitle>
+                            Creating delightful and enjoyable user interfaces and experiences requires the right tools
+                            and a strong set of skills.
+                        </MudText>
+
+                        <ButtonComponent Href="@AppRoutes.SkillsetUrl">View my skillset!</ButtonComponent>
+                    </MudStack>
+
+                    <MudSpacer/>
 
                     <MudStack Spacing="6" AlignItems="AlignItems.Center">
                         <MudImage Src="images/home/Projects.png"
