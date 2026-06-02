@@ -23,7 +23,7 @@ jobs:
       - name: Publish Blazor WASM
         run: dotnet publish Src/Portfolio.Frontend/Portfolio.Frontend/Portfolio.Frontend.csproj -c Release -o publish
 
-      - name: Ensure root base href
+      - name: Ensure project base href
         run: |
           INDEX_PATH=$(find publish -name "index.html" | head -1)
           echo "Found index.html at: $INDEX_PATH"
@@ -31,8 +31,8 @@ jobs:
             echo "index.html not found; failing"
             exit 1
           fi
-          # Keep the app rooted at / so it works from the custom domain.
-          perl -0777 -pe 's#<base\s+href=.*?>#<base href="/" />#is' -i "$INDEX_PATH"
+          # GitHub Pages project site path for this repo.
+          perl -0777 -pe 's#<base\s+href=.*?>#<base href="/MauroLeonardoPortfolio/" />#is' -i "$INDEX_PATH"
           echo "New base tag:" ; grep -i '<base' "$INDEX_PATH" || true
           echo "First 20 lines of index.html:" ; head -n 20 "$INDEX_PATH" || true
 
@@ -45,10 +45,6 @@ jobs:
             exit 1
           fi
           touch "$WWWROOT/.nojekyll"
-          if [ -f CNAME ]; then
-            cp CNAME "$WWWROOT/CNAME"
-            echo "Copied CNAME into publish root"
-          fi
           echo "Uploading from: $WWWROOT"
           ls -la "$WWWROOT"
           echo "WWWROOT=$WWWROOT" >> $GITHUB_ENV
