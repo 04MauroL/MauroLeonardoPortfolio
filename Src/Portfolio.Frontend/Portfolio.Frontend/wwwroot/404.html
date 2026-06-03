@@ -8,7 +8,7 @@
         // Encodes the target URL into a query string and redirects to the root,
         // where index.html will decode it and restore the URL before Blazor boots.
         // pathSegmentsToKeep=1 because the site lives under /MauroLeonardoPortfolio/
-        var pathSegmentsToKeep = 1;
+        var pathSegmentsToKeep = 0;
         var l = window.location;
         l.replace(
             l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

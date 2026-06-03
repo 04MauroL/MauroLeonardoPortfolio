@@ -23,17 +23,6 @@ jobs:
       - name: Publish Blazor WASM
         run: dotnet publish Src/Portfolio.Frontend/Portfolio.Frontend/Portfolio.Frontend.csproj -c Release -o publish
 
-      - name: Ensure project base href
-        run: |
-          INDEX_PATH="publish/wwwroot/index.html"
-          echo "Found index.html at: $INDEX_PATH"
-          if [ ! -f "$INDEX_PATH" ]; then
-            echo "index.html not found; failing"
-            exit 1
-          fi
-          perl -0777 -pe 's#<base\s+href=.*?>#<base href="/MauroLeonardoPortfolio/" />#is' -i "$INDEX_PATH"
-          echo "New base tag:" ; grep -i '<base' "$INDEX_PATH" || true
-
       - name: Add .nojekyll file
         run: touch publish/wwwroot/.nojekyll
 
