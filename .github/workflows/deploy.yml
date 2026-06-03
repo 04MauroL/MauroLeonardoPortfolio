@@ -25,40 +25,29 @@ jobs:
 
       - name: Ensure project base href
         run: |
-          INDEX_PATH=$(find publish -name "index.html" | head -1)
+          INDEX_PATH="publish/wwwroot/index.html"
           echo "Found index.html at: $INDEX_PATH"
-          if [ -z "$INDEX_PATH" ]; then
+          if [ ! -f "$INDEX_PATH" ]; then
             echo "index.html not found; failing"
             exit 1
           fi
-          # GitHub Pages project site path for this repo.
           perl -0777 -pe 's#<base\s+href=.*?>#<base href="/MauroLeonardoPortfolio/" />#is' -i "$INDEX_PATH"
           echo "New base tag:" ; grep -i '<base' "$INDEX_PATH" || true
-          echo "First 20 lines of index.html:" ; head -n 20 "$INDEX_PATH" || true
 
       - name: Add .nojekyll file
-        run: |
-          WWWROOT=$(find publish -name "wwwroot" -type d | head -1)
-          echo "Found wwwroot at: $WWWROOT"
-          if [ -z "$WWWROOT" ]; then
-            echo "wwwroot folder not found; failing"
-            exit 1
-          fi
-          touch "$WWWROOT/.nojekyll"
-          echo "Uploading from: $WWWROOT"
-          ls -la "$WWWROOT"
-          echo "WWWROOT=$WWWROOT" >> $GITHUB_ENV
+        run: touch publish/wwwroot/.nojekyll
 
       - name: Upload static site for GitHub Pages
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ${{ env.WWWROOT }}
+          path: publish/wwwroot
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
