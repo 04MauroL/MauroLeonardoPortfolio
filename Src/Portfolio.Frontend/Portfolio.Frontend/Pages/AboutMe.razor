@@ -3,34 +3,46 @@
 
 <MudStack Spacing="20">
     <Section>
-        <MudStack Spacing="10" Justify="Justify.Center" Class="mud-height-full">
-            <SectionTitle>About me</SectionTitle>
-            <MudText Typo="Typo.h5">
-                My name is Mauro Leonardo and I’m 21 years old. Since I was a child, I’ve been interested in
-                technology:
-                from trying to see if the fridge’s light goes out when the door is closed, to wanting to know
-                how apps
-                are coded and work behind the scenes. I always have something to say about a tech product, and
-                I’m
-                always interested in learning new things. I’m enthusiastic about talking about life or what’s
-                going on
-                in the world, or I work in silence when I’m in the zone trying to get things done.
-            </MudText>
-            <MudText Typo="Typo.h5">
-                Learning new things is the reason I wake up in the morning, and luckily for me the IT-world is
-                constantly evolving. I stay motivated to work on my projects because they can help people do
-                their jobs. Working with my colleagues and getting things done is what makes me happy. I like planning
-                things beforehand and never miss a deadline. I’m always the one keeping an eye
-                on the time to make sure I get things done. I’m a team player, but I can also work individually
-                if required. When you ask me to do something, you can count on it. I’m trustworthy, a lifelong
-                learner and passionate about what I do.
-            </MudText>
-            <MudStack Spacing="10" Class="flex-column flex-md-row">
-                <ButtonComponent Href="files/Mauro_Leonardo_CV.pdf" Target="_blank">
-                    Open my CV
-                </ButtonComponent>
-            </MudStack>
-        </MudStack>
+        <MudGrid Spacing="20" Justify="Justify.Center">
+            <MudItem xs="12" md="4">
+                <MudStack Justify="Justify.Center" Class="mud-height-full">
+                    <MudImage Src="images/home/Mauro.jpg" Alt="Mauro Leonardo" Fluid="true" Width="500" Height="500"
+                              Class="rounded-xl"/>
+                </MudStack>
+            </MudItem>
+
+            <MudItem xs="12" md="8">
+                <MudStack Spacing="5" Justify="Justify.Center" Class="mud-height-full">
+                    <SectionTitle>About me</SectionTitle>
+                    <MudText Typo="Typo.h5">
+                        My name is Mauro Leonardo and I’m 21 years old. Since I was a child, I’ve been interested in
+                        technology:
+                        from trying to see if the fridge’s light goes out when the door is closed, to wanting to know
+                        how apps
+                        are coded and work behind the scenes. I always have something to say about a tech product, and
+                        I’m
+                        always interested in learning new things. I’m enthusiastic about talking about life or what’s
+                        going on
+                        in the world, or I work in silence when I’m in the zone trying to get things done.
+                    </MudText>
+                    <MudText Typo="Typo.h5">
+                        Learning new things is the reason I wake up in the morning, and luckily for me the IT-world is
+                        constantly evolving. I stay motivated to work on my projects because they can help people do
+                        their jobs. Working with my colleagues and getting things done is what makes me happy. I like
+                        planning
+                        things beforehand and never miss a deadline. I’m always the one keeping an eye
+                        on the time to make sure I get things done. I’m a team player, but I can also work individually
+                        if required. When you ask me to do something, you can count on it. I’m trustworthy, a lifelong
+                        learner and passionate about what I do.
+                    </MudText>
+                    <MudStack Spacing="10" Class="flex-column flex-md-row">
+                        <ButtonComponent Href="files/Mauro_Leonardo_CV.pdf" Target="_blank">
+                            Open my CV
+                        </ButtonComponent>
+                    </MudStack>
+                </MudStack>
+            </MudItem>
+        </MudGrid>
     </Section>
 
     <Section>
