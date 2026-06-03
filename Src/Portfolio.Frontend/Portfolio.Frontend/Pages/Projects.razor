@@ -20,37 +20,73 @@
 
     <Section>
         <MudStack Spacing="10">
-            <MudTimeline Reverse="true">
-                <ProjectTimeLineItem TimeLineDate="February - June, 2025"
-                                     ImageSrc="images/projects/Trackle/Trackle-Logo.png"
-                                     ImageAlt="Trackle logo"
-                                     Title="Trackle - EchoTrack"
-                                     Description="During the course SKIL3 of my bachelor, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel.">
-                    <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTrackleUrl)">
-                        View more details here!
-                    </ButtonComponent>
-                </ProjectTimeLineItem>
+            <MudHidden Breakpoint="Breakpoint.MdAndDown">
+                <MudTimeline Reverse="true">
+                    <ProjectTimeLineItem TimeLineDate="February - June, 2025"
+                                         ImageSrc="images/projects/Trackle-Logo.png"
+                                         ImageAlt="Trackle logo"
+                                         Title="Trackle - EchoTrack"
+                                         Description="During the course SKIL3 of my bachelor, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel.">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTrackleUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
 
-                <ProjectTimeLineItem TimeLineDate="February - June, 2025"
-                                     ImageSrc="images/projects/Hotel-Kempenrust.png"
-                                     ImageAlt="Hotel Kempenrust Homepage"
-                                     Title="Hotel Kempenrust"
-                                     Description="During this project, I was the scrum master, and lead my team during the development of the design, and creation of the website for the hotel.">
-                    <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectHotelKempenrustUrl)">
-                        View more details here!
-                    </ButtonComponent>
-                </ProjectTimeLineItem>
+                    <ProjectTimeLineItem TimeLineDate="February - June, 2025"
+                                         ImageSrc="images/projects/Hotel-Kempenrust.png"
+                                         ImageAlt="Hotel Kempenrust Homepage"
+                                         Title="Hotel Kempenrust"
+                                         Description="During this project, I was the scrum master, and lead my team during the development of the design, and creation of the website for the hotel.">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectHotelKempenrustUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
 
-                <ProjectTimeLineItem TimeLineDate="September - December, 2024"
-                                     ImageSrc="images/projects/TTC-Westel.png"
-                                     ImageAlt="TTC Westel"
-                                     Title="TTC Westel"
-                                     Description="During the course SKIL2 of my bachelor, together with a team, I created prototypes in Figma for the club TTC Westel. ">
-                    <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTtcWestelUrl)">
-                        View more details here!
-                    </ButtonComponent>
-                </ProjectTimeLineItem>
-            </MudTimeline>
+                    <ProjectTimeLineItem TimeLineDate="September - December, 2024"
+                                         ImageSrc="images/projects/TTC-Westel.png"
+                                         ImageAlt="TTC Westel"
+                                         Title="TTC Westel"
+                                         Description="During the course SKIL2 of my bachelor, together with a team, I created prototypes in Figma for the club TTC Westel. ">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTtcWestelUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
+                </MudTimeline>
+            </MudHidden>
+
+            <MudHidden Breakpoint="Breakpoint.MdAndUp">
+                <MudTimeline Reverse="true">
+                    <ProjectTimeLineItem TimeLineDate="February - June, 2025"
+                                         ImageSrc="images/projects/Trackle-Logo.png"
+                                         ImageAlt="Trackle logo"
+                                         Title="Trackle - EchoTrack"
+                                         Description="During the course SKIL3 of my bachelor, I worked together with students from different studies to improve an existing application build by RideOntrack, based in Geel.">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTrackleUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
+
+                    <ProjectTimeLineItem TimeLineDate="February - June, 2025"
+                                         ImageSrc="images/projects/Hotel-Kempenrust.png"
+                                         ImageAlt="Hotel Kempenrust Homepage"
+                                         Title="Hotel Kempenrust"
+                                         Description="During this project, I was the scrum master, and lead my team during the development of the design, and creation of the website for the hotel.">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectHotelKempenrustUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
+
+                    <ProjectTimeLineItem TimeLineDate="September - December, 2024"
+                                         ImageSrc="images/projects/TTC-Westel.png"
+                                         ImageAlt="TTC Westel"
+                                         Title="TTC Westel"
+                                         Description="During the course SKIL2 of my bachelor, together with a team, I created prototypes in Figma for the club TTC Westel. ">
+                        <ButtonComponent Href="@AppRoutes.ProjectDetailUrl(AppRoutes.ProjectTtcWestelUrl)">
+                            View more details here!
+                        </ButtonComponent>
+                    </ProjectTimeLineItem>
+                </MudTimeline>
+            </MudHidden>
         </MudStack>
     </Section>
 
