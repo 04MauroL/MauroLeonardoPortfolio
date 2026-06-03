@@ -90,7 +90,7 @@ else
                 <MudStack Spacing="10" Class="flex-column flex-md-row">
                     @foreach (var file in ProjectInfoDetails.DownloadableFiles)
                     {
-                        <ButtonComponent Href="@(file.Url)">@(file.Name)</ButtonComponent>
+                        <ButtonComponent Href="@(file.Url)" Target="_blank">@(file.Name)</ButtonComponent>
                     }
                 </MudStack>
             </Section>
