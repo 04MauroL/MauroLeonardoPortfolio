@@ -7,7 +7,7 @@ public static class AppRoutes
     public const string AboutUrl = $"{_baseUrl}/about-me";
     public const string ContactUrl = $"{_baseUrl}/contact";
     public const string SkillsetUrl = $"{_baseUrl}/skillset";
-    public const string HomeUrl = $"{_baseUrl}";
+    public const string HomeUrl = "/";
     public const string InternshipsUrl = $"{_baseUrl}/internships";
     public const string ProjectsUrl = $"{_baseUrl}/projects";
 
