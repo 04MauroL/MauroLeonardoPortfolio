@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="refresh" content="0;url=/MauroLeonardoPortfolio/" />
+    <meta charset="utf-8">
+    <title>Mauro Leonardo</title>
+    <script>
+        // GitHub Pages SPA redirect trick
+        // Encodes the target URL into a query string and redirects to the root,
+        // where index.html will decode it and restore the URL before Blazor boots.
+        // pathSegmentsToKeep=1 because the site lives under /MauroLeonardoPortfolio/
+        var pathSegmentsToKeep = 1;
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
+    </script>
 </head>
-
 <body></body>
-
 </html>
