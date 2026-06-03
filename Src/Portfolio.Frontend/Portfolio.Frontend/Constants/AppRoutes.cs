@@ -2,12 +2,14 @@ namespace Portfolio.Frontend.Constants;
 
 public static class AppRoutes
 {
-    public const string AboutUrl = "/about-me";
-    public const string ContactUrl = "/contact";
-    public const string SkillsetUrl = "/skillset";
-    public const string HomeUrl = "/";
-    public const string InternshipsUrl = "/internships";
-    public const string ProjectsUrl = "/projects";
+    private const string _baseUrl = "/MauroLeonardoPortfolio";
+    
+    public const string AboutUrl = _baseUrl + "/about-me";
+    public const string ContactUrl = _baseUrl + "/contact";
+    public const string SkillsetUrl = _baseUrl + "/skillset";
+    public const string HomeUrl = _baseUrl;
+    public const string InternshipsUrl = _baseUrl + "/internships";
+    public const string ProjectsUrl = _baseUrl + "/projects";
 
     public const string InternshipTctUrl = "tct";
     public const string InternshipCmsUrl = "cms";
@@ -16,5 +18,5 @@ public static class AppRoutes
     public const string ProjectHotelKempenrustUrl = "hotel-kempenrust";
     public const string ProjectTtcWestelUrl = "ttc-westel";
 
-    public static string ProjectDetailUrl(string projectName) => $"/project/{projectName}";
+    public static string ProjectDetailUrl(string projectName) => $"/{ProjectsUrl}/{projectName}";
 }
