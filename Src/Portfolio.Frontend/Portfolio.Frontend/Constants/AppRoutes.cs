@@ -2,9 +2,9 @@ namespace Portfolio.Frontend.Constants;
 
 public static class AppRoutes
 {
-    private const string _baseUrl = "/MauroLeonardoPortfolio";
-    
-    public const string AboutUrl =  $"{_baseUrl}/about-me";
+    private const string _baseUrl = "";
+
+    public const string AboutUrl = $"{_baseUrl}/about-me";
     public const string ContactUrl = $"{_baseUrl}/contact";
     public const string SkillsetUrl = $"{_baseUrl}/skillset";
     public const string HomeUrl = $"{_baseUrl}";
